@@ -22,7 +22,7 @@ Ship::Ship(){
   state.angle = 0.0;
   
   max_speed = 0.05;
-  damping_fact = 0.98;
+  damping_fact = 0.50;
   accel = 0.008;
   
   ship_pos.resize(16);
@@ -211,14 +211,44 @@ Ship::Ship(){
 
 };
 
-
+// TODO
+// Add slanted movement per stairs
+//
 void Ship::update_state(vec4 extents){
-    if(state.thruster_on){
+  /*  if(state.thruster_on){
         state.velocity += accel* vec2(state.pointing.x, state.pointing.y);
         if(length(state.velocity) > max_speed){
             state.velocity = normalize(state.velocity);
             state.velocity*=max_speed;
         }
+    }
+    
+   */
+    
+    // Moves sprite left
+    if(state.turning == _TURN_LEFT){
+        std::cout << state.cur_location << std::cout;
+        state.velocity -= .15 * vec2(1.0, 0.0);
+        if(length(state.velocity) > max_speed){
+            state.velocity = normalize(state.velocity);
+            state.velocity*=max_speed;
+        }
+    }
+    
+    // Moves sprite right
+    if(state.turning == _TURN_RIGHT){
+        std::cout << state.cur_location << std::cout;
+        state.cur_location += .15 * vec2(1.0, 0.0);
+        if(length(state.velocity) > max_speed){
+            state.velocity = normalize(state.velocity);
+            state.velocity*=max_speed;
+        }
+    }
+    // TODO Add lots of platform vectors, or fix jump somehow. 
+    // "jump" movement
+    if(state.thruster_on == true){
+        state.velocity += .15 * vec2(0.0, 1.0);
+               
     }
     
     state.velocity*= damping_fact;

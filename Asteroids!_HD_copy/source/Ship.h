@@ -92,9 +92,9 @@ public:
   
   inline void rotateLeft() {
     state.turning = _TURN_LEFT;
-    state.angle+= M_PI/16;
-    mat4 R = RotateZ(state.angle);
-    state.pointing = R*vec4(0.0f, -1.0f, 0.0f, 0.0f);
+    //state.angle+= M_PI/16;
+    //mat4 R = RotateZ(state.angle);
+    //state.pointing = R*vec4(0.0f, -1.0f, 0.0f, 0.0f);
   }
   
   inline void stopTurn(){
@@ -103,9 +103,9 @@ public:
   
   inline void rotateRight(){
     state.turning = _TURN_RIGHT;
-    state.angle-= M_PI/16;
-    mat4 R = RotateZ(state.angle);
-    state.pointing = R*vec4(0.0f, -1.0f, 0.0f, 0.0f);
+    //state.angle-= M_PI/16;
+    //mat4 R = RotateZ(state.angle);
+    //state.pointing = R*vec4(0.0f, -1.0f, 0.0f, 0.0f);
   }
   
   Bullet pew_pew(){
