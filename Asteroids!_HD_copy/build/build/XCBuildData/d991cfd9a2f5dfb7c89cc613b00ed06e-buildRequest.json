@@ -7,10 +7,10 @@
   "buildCommand" : "build",
   "configuredTargets" : [
     {
-      "guid" : "c6594d3b03f6c4d7e5f1afe8e293d3a07eb9c5bad9a162bd49d55ab2737c9a1b"
+      "guid" : "c6594d3b03f6c4d7e5f1afe8e293d3a0a1e16d4b338e72c78e6ea8800c93f035"
     }
   ],
-  "containerPath" : "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/ASTEROIDS.xcodeproj",
+  "containerPath" : "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/ASTEROIDS.xcodeproj",
   "continueBuildingAfterErrors" : true,
   "enableIndexBuildArena" : false,
   "hideShellScriptEnvironment" : false,
@@ -20,7 +20,7 @@
     "activeRunDestination" : {
       "disableOnlyActiveArch" : false,
       "platform" : "macosx",
-      "sdk" : "macosx12.3",
+      "sdk" : "macosx13.0",
       "sdkVariant" : "macos",
       "supportedArchitectures" : [
         "x86_64h",
@@ -31,10 +31,10 @@
     "arenaInfo" : {
       "buildIntermediatesPath" : "",
       "buildProductsPath" : "",
-      "derivedDataPath" : "/Users/chriscallahan/Library/Developer/Xcode/DerivedData",
-      "indexDataStoreFolderPath" : "/Users/chriscallahan/Library/Developer/Xcode/DerivedData/ASTEROIDS-fzjrjgmuiuqfqxalumlazcmpfmgd/Index.noindex/DataStore",
+      "derivedDataPath" : "/Users/markbiju/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/markbiju/Library/Developer/Xcode/DerivedData/ASTEROIDS-dkbzxzczosqwtgfoocpsdweecnlf/Index.noindex/DataStore",
       "indexEnableDataStore" : true,
-      "indexPCHPath" : "/Users/chriscallahan/Library/Developer/Xcode/DerivedData/ASTEROIDS-fzjrjgmuiuqfqxalumlazcmpfmgd/Index.noindex/PrecompiledHeaders",
+      "indexPCHPath" : "/Users/markbiju/Library/Developer/Xcode/DerivedData/ASTEROIDS-dkbzxzczosqwtgfoocpsdweecnlf/Index.noindex/PrecompiledHeaders",
       "pchPath" : ""
     },
     "configurationName" : "Debug",

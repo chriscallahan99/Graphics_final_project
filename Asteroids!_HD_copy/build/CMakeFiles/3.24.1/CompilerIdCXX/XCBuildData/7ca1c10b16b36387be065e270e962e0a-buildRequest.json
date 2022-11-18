@@ -7,10 +7,10 @@
   "buildCommand" : "build",
   "configuredTargets" : [
     {
-      "guid" : "d9d24303ac0ea36fa2bc7f98aeea5fe33f938c03aee3f24af46a5caa592e362d"
+      "guid" : "cab83bf49ed2df1b1ab81a78cb182d1a3f938c03aee3f24af46a5caa592e362d"
     }
   ],
-  "containerPath" : "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/3.24.1/CompilerIdC/CompilerIdC.xcodeproj",
+  "containerPath" : "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/3.24.1/CompilerIdCXX/CompilerIdCXX.xcodeproj",
   "continueBuildingAfterErrors" : false,
   "enableIndexBuildArena" : false,
   "hideShellScriptEnvironment" : false,

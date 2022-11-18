@@ -7,281 +7,281 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		496DD1D27072443CB9C5AC1C /* ALL_BUILD */ = {
+		C4EE3F3B150444C1BEF72C8D /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D85E0B06BB874F4AA33B29B3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 1FF08472CB4B4F96ABBF8CB5 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				0B4EB23F496C7AC649D761EF /* Generate CMakeFiles/ALL_BUILD */,
+				30C72156355F24135BE6ECF0 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				1EA0D2FB8817434EB9824DE0 /* PBXTargetDependency */,
-				B5EA1E21AFDA41B4BEFE288E /* PBXTargetDependency */,
-				B01AF9CB9CB64026B2A8FE69 /* PBXTargetDependency */,
-				34A33EC005504C04B5615BF8 /* PBXTargetDependency */,
+				87F0E15AAA1E43A7BFD31B8A /* PBXTargetDependency */,
+				946668FC56E947B3BF897DBA /* PBXTargetDependency */,
+				927D2226B1F34F9D9551C7CA /* PBXTargetDependency */,
+				279DE90765E04B3F86F1E37E /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
-		53DE28B873F740A09BDB4CE1 /* update_mappings */ = {
+		D0F2469F565E48A1AB8E2F0D /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C3F0FA6340BC464F92417B8E /* Build configuration list for PBXAggregateTarget "update_mappings" */;
+			buildConfigurationList = 0108086C68874A44863BA037 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				F02D45562B5436D7D311D672 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */,
-			);
-			dependencies = (
-			);
-			name = update_mappings;
-			productName = update_mappings;
-		};
-		6426E4F8F6CD4883A1444F39 /* ZERO_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = C046553D07AA4F6AA7CFD82D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-			buildPhases = (
-				6F686177F70DCDD8D464B8E2 /* Generate CMakeFiles/ZERO_CHECK */,
+				F15BFA1AA8EA63910804AA6D /* Generate CMakeFiles/ZERO_CHECK */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
+		E2C2E6C7428B474099387A4C /* update_mappings */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 623F0A7CCD9E41FF9174078A /* Build configuration list for PBXAggregateTarget "update_mappings" */;
+			buildPhases = (
+				D45EFFABC6A71BE02271F372 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */,
+			);
+			dependencies = (
+			);
+			name = update_mappings;
+			productName = update_mappings;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		007C2EA908274E17B20F7071 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 4934E2DCD604437489098866 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.h */; };
-		07E26F6D91554820B793CA06 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 17553053725A463D9DD34229 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_init.m */; };
-		08FFF7A9C2EC4D05BE1C46D7 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = BD03CE93D76D40CB837D3B0F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.c */; };
-		14FAEFDB544948699996BE50 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/context.c */ = {isa = PBXBuildFile; fileRef = 31A1A6E65CD14918AD73B974 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/context.c */; };
-		192CB014E64848699E855969 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = B31A092CD41D4458A53D4090 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/glfw_config.h */; };
-		1C47089461AF4CBA8AEE776D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.h */ = {isa = PBXBuildFile; fileRef = 3302BEED293B4D97A1FA22AB /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.h */; };
-		228E4D10A96C4616A6B86DA6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = A98CDC13712741F59184E960 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist */; };
-		2386B2E5E6F646ADBCC44C97 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 9511027BC1354544BB5B2CF5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3.h */; };
-		25727D1260E24228800F687E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.h */ = {isa = PBXBuildFile; fileRef = 39E91A2BD6814875A7F91A1E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.h */; };
-		2B0C170FE1D64E25A052A014 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = D8BA28B4A5644A6B8654F381 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_time.c */; };
-		2BA53D13C5CF44E5BDDDA7D8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 348242BB59864A2584067D58 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */; };
-		2BB05179D2384613BD6D9A5F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Texture.glsl */ = {isa = PBXBuildFile; fileRef = 032C05AB79AA4744B315A7C3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Texture.glsl */; };
-		38A063761EDE4EC982351379 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXBuildFile; fileRef = C520759AA2D24F41B1C153C2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad/gl.h */; };
-		3E51103E2EC243B1A196BB9F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.h */ = {isa = PBXBuildFile; fileRef = 2D087F7ABE404E33BA8388D6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.h */; };
-		3F25AD2C600742B89D0BA827 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.cpp */ = {isa = PBXBuildFile; fileRef = DB3FBF400C754EFD8E1406FF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.cpp */; };
-		3FBA18639FA54190B7466B9D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/internal.h */ = {isa = PBXBuildFile; fileRef = DC0B93F170514C76AF29786F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/internal.h */; };
-		4480954DA4BF4DDDB62D75E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 8ABF3A92D0C540B28000F7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.h */; };
-		459B9DE83E464D6CB5EF38CC /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 61F61455A5704BE09CE68185 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3native.h */; };
-		479E9587DF0F41A68C45DA41 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 6C7D601BB45A46D79E5E2590 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_monitor.m */; };
-		5AA4D5E4B39A491DA5650C07 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/main.cpp */ = {isa = PBXBuildFile; fileRef = 579815DD6EDD49E0A242A49A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/main.cpp */; };
-		5F81993ACCBB49D9A8771593 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.cpp */ = {isa = PBXBuildFile; fileRef = DB4D746F22D54AEA91E953AD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.cpp */; };
-		62375299A00749E8806030F3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.h */ = {isa = PBXBuildFile; fileRef = 32CCBB14E9834827A9D97490 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.h */; };
-		641B49940B44451295B38543 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXBuildFile; fileRef = 3399852C35364DD99FE4D02C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_vulkan.c */; };
-		66B6976EDFFD428AA37FB759 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.h */ = {isa = PBXBuildFile; fileRef = 5A4B01D1578646728A71DDDF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.h */; };
-		6C5FB17B5EB74E50B259B644 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = CF2FAB66DCA248F19D02F69F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.m */; };
-		74BE0BD829904FD0AA150993 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/input.c */ = {isa = PBXBuildFile; fileRef = 1E5011238910442FA2A9C7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/input.c */; };
-		80105D369E3B4A529174D233 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/window.c */ = {isa = PBXBuildFile; fileRef = E29D9AD0C24844FCAFDED028 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/window.c */; };
-		827D245369F344E5AC174C40 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 380B89846EC54D7CB86425E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/vulkan.c */; };
-		8550BB3D044A4F1F8F43AC41 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXBuildFile; fileRef = 70954AFAB1AE414F93269CE5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/tinycthread.c */; };
-		8D07AD731FC2409089ED2C7E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp */ = {isa = PBXBuildFile; fileRef = 34CA3B2D31384A798DA98F66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp */; };
-		8E6717BD79CB4D629474773A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp */ = {isa = PBXBuildFile; fileRef = 3FC43EB84B7D4EFEB02F7FBD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp */; };
-		93004CCE56FA49BD9C686568 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 99E3F762042D4AAE9161577F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.cpp */; };
-		95E3A7A2BAB94F5DB4D26649 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Texture.glsl */ = {isa = PBXBuildFile; fileRef = 9C0D07E9B30649C495C0AA60 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Texture.glsl */; };
-		9C86CE53E56C4878836D1880 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXBuildFile; fileRef = CE244DF2D4974F5BB5813983 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_gl.c */; };
-		9E19015D11004858A71F4F6B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.h */ = {isa = PBXBuildFile; fileRef = 4AE28102CA844CC4BBB6AE2F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.h */; };
-		9E351B24A1E942028D153D44 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 5D43B0A4C9ED47CDAB89795D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.c */; };
-		A23169754CA04E24AE29EC05 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/mat.h */ = {isa = PBXBuildFile; fileRef = 861575B50B864B9FB31A00F2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/mat.h */; };
-		A5718578399D413EBACCB9E9 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/vec.h */ = {isa = PBXBuildFile; fileRef = 2E76D15A60F24337B7DDDD96 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/vec.h */; };
-		A8EFA5E7D79B4558BED0995C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = A5FF4EC3EF1C451189744512 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.h */; };
-		AAB8B1E5C13B4EE083503BE9 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Bullets.glsl */ = {isa = PBXBuildFile; fileRef = 58AA1DD5691C472F96D23A9B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Bullets.glsl */; };
-		AB7742281A524AB9A478D1F1 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 56562D6DD74F421B93DC59E2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/monitor.c */; };
-		B280432CE368487E9DAB796A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = FD134D5FEAAE493084C1800E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_platform.h */; };
-		B29E0E693FB642FABC6836CF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.cpp */ = {isa = PBXBuildFile; fileRef = DE4FEDAC3C2D401CA3F07735 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.cpp */; };
-		B304C2D45B7C4DB6A0EE58A4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h */ = {isa = PBXBuildFile; fileRef = EB36701B216B4ABEA2A4FF56 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h */; };
-		B4A8D70D650647588EEC1698 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 795B0E270F09485489BC5B12 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */; };
-		B6CDDE7AAC1548A6B94B4A96 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = F2F4F0C244AC49F39B70AD66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.c */; };
-		BA6EF8C434C2415A932B985F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 1EA09C899D2C4CE4B29486C0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_window.m */; };
-		BD6414131AE94F5C919DA8DC /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/shader_process.h */ = {isa = PBXBuildFile; fileRef = 43761E1B863A4D73A3A39066 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/shader_process.h */; };
-		C4AB98BE0EC64408BC013E8E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 7C952AF431F0437F9167B38F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.m */; };
-		CBA512AE345B41D698624F30 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 07FF67E51DD04973A3DD71EC /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.h */; };
-		CC406E5344EE4B52812065B8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 7EB1426601C949B9BB66F42D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.h */; };
-		D8D8816CBCF34925A279F797 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/init.c */ = {isa = PBXBuildFile; fileRef = 591762C3408846BFBD102BB0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/init.c */; };
-		DCB73F3FB0484A258D6E7D5E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 95CC4BB907EA4A81B01E5DC4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */; };
-		F2B541B0DE2A4108AE203E79 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.cpp */ = {isa = PBXBuildFile; fileRef = 678C588DAB334AEA8EC88954 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.cpp */; };
-		F3389D988B3A4D479EE3D0C0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Bullets.glsl */ = {isa = PBXBuildFile; fileRef = E0AF24E045CA485082D27A3D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Bullets.glsl */; };
+		02F8516706764CB89D228A19 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = A0B709C91E624DEEBBB13705 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.c */; };
+		06F4C73BC1564E5899BCBBCC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = C85C755E44134F6C900FF5EB /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.cpp */; };
+		0A2B10FD4F144307B96579DB /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXBuildFile; fileRef = F9E5AA09E7134B0294AC4DF9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_vulkan.c */; };
+		0C89DB9567E148CA8A71C19B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 47BE12B40F984516BEBB4C88 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */; };
+		173C0368ECB4467E8740D0E6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 6B2EAC9385624DADBF96A948 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.h */; };
+		17931E05151042318153A686 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 9C549B1147FC4199ADA00F0F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.h */; };
+		1CE8AD9386B442FEA3271E61 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 60BD67EA222D442280279E2F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.c */; };
+		1D27E23B51404F298123DB88 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXBuildFile; fileRef = DEEC43A4B6524E368C338CE5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_gl.c */; };
+		1DE79610559F4216B1FBBC66 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/mat.h */ = {isa = PBXBuildFile; fileRef = E0E6B586A87B48619347A2CE /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/mat.h */; };
+		21402092CDE34D59AF8C1C12 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 5764909C73804ED783057625 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3.h */; };
+		2C8C4047E55E49089CD185B1 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.h */ = {isa = PBXBuildFile; fileRef = 8FF308BB405F40759859992C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.h */; };
+		2EB80F9F277B4EBCB5B66274 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/init.c */ = {isa = PBXBuildFile; fileRef = 6F6872AC60B94706AF00AE41 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/init.c */; };
+		39101D6ECF474879B167B594 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = F17A138F3F0F412CA4535E1C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.h */; };
+		3C42B2981AF3442C81254FFA /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C5447436526C45799C30B90A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */; };
+		43031424B7BF4C648CFE5F9E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 5D9E876619054325ABDDC3ED /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.m */; };
+		451FC17ABC4E4E75A6911275 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 1E4CB4F6A582443AAC0D0E5B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.c */; };
+		4C5D86A64639409CAE103102 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Bullets.glsl */ = {isa = PBXBuildFile; fileRef = E8DDDC3193D2497BBC90F3F2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Bullets.glsl */; };
+		5139B441CCD14FF9B20413DC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXBuildFile; fileRef = 7B15D20F9CF34D1CBEA41A70 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad/gl.h */; };
+		5F852EE25A1E4D0C9840B532 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.cpp */ = {isa = PBXBuildFile; fileRef = BB1872CCBAF14C21A3FE5CAC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.cpp */; };
+		6009A69CEDD24146A3717B14 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 44EC2CD98E7441DAB94C4B19 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_monitor.m */; };
+		73C80B69660C4F8A86549CC2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.cpp */ = {isa = PBXBuildFile; fileRef = 23A477726CD54DCABF42A87E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.cpp */; };
+		7BB49A984D424A4EBFED1639 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 5D49D0CC0BCD4519B1C6BFDD /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/vulkan.c */; };
+		7EFEF6585F354C73AC94941E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.h */ = {isa = PBXBuildFile; fileRef = A1BD21DE45654E18AE2074A6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.h */; };
+		80FE078E3663456380F4D325 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.h */ = {isa = PBXBuildFile; fileRef = 3C9573E211BC4D15AB4EF9CF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.h */; };
+		8318F4B01F0F4952882EB73F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/window.c */ = {isa = PBXBuildFile; fileRef = 67F01A73967641719BBEBF8A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/window.c */; };
+		83EFD5037F7C4E248352EAD0 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Bullets.glsl */ = {isa = PBXBuildFile; fileRef = AD6F36AA990A4AFBBE4AB813 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Bullets.glsl */; };
+		86A0C23CB6AB4706BAC69201 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Texture.glsl */ = {isa = PBXBuildFile; fileRef = F85B2F88E4DF4F89ACEE10B2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Texture.glsl */; };
+		88C0559B27B04E93A037F677 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 322CE48FAC584286A9AF409F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.h */; };
+		8D55930668FF416F8C809847 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 12F16C69D5DF444A9999C54B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/monitor.c */; };
+		99557E2172034409A2D0334C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.h */ = {isa = PBXBuildFile; fileRef = 42F033FEAA004D28B5DC68D4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.h */; };
+		A22B808B4D8843E8AB03A447 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 816B2D90AC3544BF9A6067A5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_time.c */; };
+		A253815618314201845345C4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.h */ = {isa = PBXBuildFile; fileRef = BBC8CCC2ECE148ACB00542CA /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.h */; };
+		A2BE3CFFF0CD44E9813A1443 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/input.c */ = {isa = PBXBuildFile; fileRef = CFA9919FCD274F7394516D5F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/input.c */; };
+		A4F1FD17E63541128EF8C3B1 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Texture.glsl */ = {isa = PBXBuildFile; fileRef = 00ECD5A5B74B4D7499CFE9D7 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Texture.glsl */; };
+		A778C618FB0843D786161144 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 0182DE8F1CE54AA782D9A079 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.m */; };
+		B06032FD230B423B95F86B63 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.cpp */ = {isa = PBXBuildFile; fileRef = 498D96D5D1F74A8DA5C726D6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.cpp */; };
+		B101AE42832C4642924C9353 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/vec.h */ = {isa = PBXBuildFile; fileRef = 1B32316257714AC9B0FB0BA4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/vec.h */; };
+		B1CCAAA79CD3448DBB3547DC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = DB2712CEFD054113BB746CCF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3native.h */; };
+		BB4A52B0EE5346A6A4917FF5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/context.c */ = {isa = PBXBuildFile; fileRef = 2A8283C011FB4B8B90F0BF54 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/context.c */; };
+		BC881A2870FE4A09A15D59AF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp */ = {isa = PBXBuildFile; fileRef = 7ED899A19A1840AE96CF2663 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp */; };
+		C15D608C124F4C4F9A14A584 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 88229EBBC68347399B290E4B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_platform.h */; };
+		C3DC413091D84ABE94E1895E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B4628354C454C898BCA876A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */; };
+		C4BAA8661EA646D499CC6E8C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/shader_process.h */ = {isa = PBXBuildFile; fileRef = 2A88F38AA50E4141923BB40B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/shader_process.h */; };
+		C6478CE03AD14F50A99F62B0 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/main.cpp */ = {isa = PBXBuildFile; fileRef = 5992B1AB60B0439C9ECE672F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/main.cpp */; };
+		CFC4DE5D1B1443E285677C79 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 154F62844CE54F8C80826686 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_init.m */; };
+		D2D396EB5D744623BEE6E424 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/internal.h */ = {isa = PBXBuildFile; fileRef = C1A002B71CD8462498DD89B9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/internal.h */; };
+		D39A049D89164BAEBB0C442E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 21AA66C7D6F74D08A0AA99A2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist */; };
+		D9BDF4637B1E44A58E9A3E45 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.cpp */ = {isa = PBXBuildFile; fileRef = 8F638CD858C04C02AD4ADC09 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.cpp */; };
+		DE00211E4E8440E580BC173F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp */ = {isa = PBXBuildFile; fileRef = 503E9C922DE14CAB9BC4EA3E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp */; };
+		DEA0BA0A247B49A7A5E2BD48 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXBuildFile; fileRef = BE1279A920A148CE81D11787 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/tinycthread.c */; };
+		EEE9F82E453D4FB78201522C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = CC8BB00E89B4419CA793F290 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.h */; };
+		EF4716E0564943CE82A5461E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 616E918E9ABF4C72956A4381 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_window.m */; };
+		F50A164AE8A748D3BF54B04E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 1A75B882906448B2B68A1212 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/glfw_config.h */; };
+		FB3EC93C15784CD394F40C98 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 34E6A01CF3504B52B3D71546 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h */; };
+		FDB354C9CBBD43CDBD7B0D38 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.h */ = {isa = PBXBuildFile; fileRef = CFC198EA988D41A094C12CB9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		07F05BC55F584652B1FF2118 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		0A54E129430C4B8D8EEE989D /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		4C7FFA48BFDA4C709490E4AF /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		8BB0CECE12E0435BB708180A /* MinSizeRel */ = {
+		7002F65F011A47AE9592FED9 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		8BBAF844F4664B53BD680A17 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		94CA5A66884A42118AB18DFD /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C79A909D5BFD416A9E988E83 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		02B8157D4F6B4CD49081EBE9 /* PBXContainerItemProxy */ = {
+		0B0503FFA4714EAFBF3D0858 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 280882F5603A46F0A33F550E;
+			remoteGlobalIDString = D0F2469F565E48A1AB8E2F0D;
+			remoteInfo = ZERO_CHECK;
+		};
+		0C1C4F7A6EE746B2B67D3914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E445C54581406680C29521;
+			remoteInfo = glfw;
+		};
+		234426C9074B4BD288210D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E177CDA7A46F4AB9A0B67973;
 			remoteInfo = glad;
 		};
-		05C210F64AE046BEA0F14D30 /* PBXContainerItemProxy */ = {
+		24D0F9D424A44BD399825C33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 954F6C876C0546B0ABDAB815;
-			remoteInfo = glfw;
-		};
-		0DA0C9EE45E14672849B4AA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 954F6C876C0546B0ABDAB815;
-			remoteInfo = glfw;
-		};
-		2C1D7BEBB65E4B869A21BB36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6426E4F8F6CD4883A1444F39;
-			remoteInfo = ZERO_CHECK;
-		};
-		2E198BD5FB1B4F80AB56AAD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 954F6C876C0546B0ABDAB815;
-			remoteInfo = glfw;
-		};
-		56F04C2FD36A4E5A92CE7A86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6426E4F8F6CD4883A1444F39;
-			remoteInfo = ZERO_CHECK;
-		};
-		699091D4464E4FDAB326E002 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 280882F5603A46F0A33F550E;
-			remoteInfo = glad;
-		};
-		6E85B66BC1844175A1D2BA29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6426E4F8F6CD4883A1444F39;
-			remoteInfo = ZERO_CHECK;
-		};
-		72B402F49DCA43908B8022B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F94506CBA35D45BE83A7C0A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55BB82B3EFCE464FAA770060;
+			remoteGlobalIDString = 84635DDB10B14D0B80C59B1F;
 			remoteInfo = asteroids;
+		};
+		4081FB6C939C470D9B526D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E445C54581406680C29521;
+			remoteInfo = glfw;
+		};
+		4AD83F0DBC394CE19F0FAABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F2469F565E48A1AB8E2F0D;
+			remoteInfo = ZERO_CHECK;
+		};
+		A3D7CAE0BFA643128AB963A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F2469F565E48A1AB8E2F0D;
+			remoteInfo = ZERO_CHECK;
+		};
+		F2603077F42A4C3E8A08708D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E445C54581406680C29521;
+			remoteInfo = glfw;
+		};
+		FEFD8D5B12F64B479D58F831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1540B293329D42899A52932E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E177CDA7A46F4AB9A0B67973;
+			remoteInfo = glad;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032C05AB79AA4744B315A7C3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Texture.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_Texture.glsl; path = shaders/vshader_Texture.glsl; sourceTree = SOURCE_ROOT; };
-		07FF67E51DD04973A3DD71EC /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.3.7/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
-		17553053725A463D9DD34229 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.3.7/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
-		1E5011238910442FA2A9C7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.3.7/src/input.c"; sourceTree = SOURCE_ROOT; };
-		1EA09C899D2C4CE4B29486C0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.3.7/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
-		2D087F7ABE404E33BA8388D6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = source/utils/lodepng.h; sourceTree = SOURCE_ROOT; };
-		2E76D15A60F24337B7DDDD96 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/utils/vec.h; sourceTree = SOURCE_ROOT; };
-		31A1A6E65CD14918AD73B974 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.3.7/src/context.c"; sourceTree = SOURCE_ROOT; };
-		32CCBB14E9834827A9D97490 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Bullets.h; path = source/Bullets.h; sourceTree = SOURCE_ROOT; };
-		3302BEED293B4D97A1FA22AB /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Game.h; path = source/Game.h; sourceTree = SOURCE_ROOT; };
-		3399852C35364DD99FE4D02C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_vulkan.c; path = "glfw-3.3.7/deps/glad_vulkan.c"; sourceTree = SOURCE_ROOT; };
-		348242BB59864A2584067D58 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		34CA3B2D31384A798DA98F66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8names.cpp; path = source/utils/u8names.cpp; sourceTree = SOURCE_ROOT; };
-		380B89846EC54D7CB86425E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.3.7/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
-		39E91A2BD6814875A7F91A1E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Asteroid.h; path = source/Asteroid.h; sourceTree = SOURCE_ROOT; };
-		3FC43EB84B7D4EFEB02F7FBD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = source/path/path.cpp; sourceTree = SOURCE_ROOT; };
-		415B1F008C004A9EABB88388 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		43761E1B863A4D73A3A39066 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/shader_process.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader_process.h; path = source/utils/shader_process.h; sourceTree = SOURCE_ROOT; };
-		4934E2DCD604437489098866 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = "glfw-3.3.7/src/egl_context.h"; sourceTree = SOURCE_ROOT; };
-		4AE28102CA844CC4BBB6AE2F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u8names.h; path = source/utils/u8names.h; sourceTree = SOURCE_ROOT; };
-		56562D6DD74F421B93DC59E2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.3.7/src/monitor.c"; sourceTree = SOURCE_ROOT; };
-		579815DD6EDD49E0A242A49A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
-		58AA1DD5691C472F96D23A9B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Bullets.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_Bullets.glsl; path = shaders/vshader_Bullets.glsl; sourceTree = SOURCE_ROOT; };
-		591762C3408846BFBD102BB0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.3.7/src/init.c"; sourceTree = SOURCE_ROOT; };
-		5A4B01D1578646728A71DDDF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Ship.h; path = source/Ship.h; sourceTree = SOURCE_ROOT; };
-		5D43B0A4C9ED47CDAB89795D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = "glfw-3.3.7/src/posix_thread.c"; sourceTree = SOURCE_ROOT; };
-		61F61455A5704BE09CE68185 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.3.7/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
-		678C588DAB334AEA8EC88954 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Asteroid.cpp; path = source/Asteroid.cpp; sourceTree = SOURCE_ROOT; };
-		6C7D601BB45A46D79E5E2590 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.3.7/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
-		70954AFAB1AE414F93269CE5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tinycthread.c; path = "glfw-3.3.7/deps/tinycthread.c"; sourceTree = SOURCE_ROOT; };
-		728A6418975E450B8F88081B /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		795B0E270F09485489BC5B12 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		7C952AF431F0437F9167B38F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.3.7/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
-		7EB1426601C949B9BB66F42D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = "glfw-3.3.7/src/posix_thread.h"; sourceTree = SOURCE_ROOT; };
-		861575B50B864B9FB31A00F2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/utils/mat.h; sourceTree = SOURCE_ROOT; };
-		8A2C05D9D2E94B2881F4D46A /* asteroids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = asteroids; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ABF3A92D0C540B28000F7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.3.7/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
-		9511027BC1354544BB5B2CF5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.3.7/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
-		95CC4BB907EA4A81B01E5DC4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		99E3F762042D4AAE9161577F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = source/utils/lodepng.cpp; sourceTree = SOURCE_ROOT; };
-		9C0D07E9B30649C495C0AA60 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Texture.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_Texture.glsl; path = shaders/fshader_Texture.glsl; sourceTree = SOURCE_ROOT; };
-		A5FF4EC3EF1C451189744512 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = "glfw-3.3.7/src/osmesa_context.h"; sourceTree = SOURCE_ROOT; };
-		A98CDC13712741F59184E960 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/asteroids.dir/Info.plist; sourceTree = SOURCE_ROOT; };
-		AB343391F96348189A2CD255 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h.in */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mappings.h.in; path = "glfw-3.3.7/src/mappings.h.in"; sourceTree = SOURCE_ROOT; };
-		B1592C5958EE4E05AEDB1BE5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		B31A092CD41D4458A53D4090 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.3.7/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
-		BD03CE93D76D40CB837D3B0F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = "glfw-3.3.7/src/osmesa_context.c"; sourceTree = SOURCE_ROOT; };
-		C211F2FEA8F94CF4A1A75FEE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = GenerateMappings.cmake; path = "glfw-3.3.7/CMake/GenerateMappings.cmake"; sourceTree = SOURCE_ROOT; };
-		C520759AA2D24F41B1C153C2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl.h; path = "glfw-3.3.7/deps/glad/gl.h"; sourceTree = SOURCE_ROOT; };
-		CE244DF2D4974F5BB5813983 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_gl.c; path = "glfw-3.3.7/deps/glad_gl.c"; sourceTree = SOURCE_ROOT; };
-		CF2FAB66DCA248F19D02F69F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.3.7/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
-		D8435AFA770E40328DACD21F /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8BA28B4A5644A6B8654F381 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.3.7/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
-		DB3FBF400C754EFD8E1406FF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Ship.cpp; path = source/Ship.cpp; sourceTree = SOURCE_ROOT; };
-		DB4D746F22D54AEA91E953AD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Bullets.cpp; path = source/Bullets.cpp; sourceTree = SOURCE_ROOT; };
-		DC0B93F170514C76AF29786F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.3.7/src/internal.h"; sourceTree = SOURCE_ROOT; };
-		DE4FEDAC3C2D401CA3F07735 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Game.cpp; path = source/Game.cpp; sourceTree = SOURCE_ROOT; };
-		E0AF24E045CA485082D27A3D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Bullets.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_Bullets.glsl; path = shaders/fshader_Bullets.glsl; sourceTree = SOURCE_ROOT; };
-		E29D9AD0C24844FCAFDED028 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.3.7/src/window.c"; sourceTree = SOURCE_ROOT; };
-		EB36701B216B4ABEA2A4FF56 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = "glfw-3.3.7/src/mappings.h"; sourceTree = SOURCE_ROOT; };
-		F2F4F0C244AC49F39B70AD66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = "glfw-3.3.7/src/egl_context.c"; sourceTree = SOURCE_ROOT; };
-		FD134D5FEAAE493084C1800E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.3.7/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		00ECD5A5B74B4D7499CFE9D7 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Texture.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_Texture.glsl; path = shaders/vshader_Texture.glsl; sourceTree = SOURCE_ROOT; };
+		0182DE8F1CE54AA782D9A079 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.3.7/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		09C81CBC7C3B442AB62A966A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		12F16C69D5DF444A9999C54B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.3.7/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		154F62844CE54F8C80826686 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.3.7/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		1A75B882906448B2B68A1212 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.3.7/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		1B32316257714AC9B0FB0BA4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/utils/vec.h; sourceTree = SOURCE_ROOT; };
+		1E4CB4F6A582443AAC0D0E5B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = "glfw-3.3.7/src/osmesa_context.c"; sourceTree = SOURCE_ROOT; };
+		1E584C97258B4DB99CFE1713 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h.in */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mappings.h.in; path = "glfw-3.3.7/src/mappings.h.in"; sourceTree = SOURCE_ROOT; };
+		21AA66C7D6F74D08A0AA99A2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/asteroids.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		23A477726CD54DCABF42A87E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Asteroid.cpp; path = source/Asteroid.cpp; sourceTree = SOURCE_ROOT; };
+		2A8283C011FB4B8B90F0BF54 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.3.7/src/context.c"; sourceTree = SOURCE_ROOT; };
+		2A88F38AA50E4141923BB40B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/shader_process.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader_process.h; path = source/utils/shader_process.h; sourceTree = SOURCE_ROOT; };
+		322CE48FAC584286A9AF409F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = "glfw-3.3.7/src/osmesa_context.h"; sourceTree = SOURCE_ROOT; };
+		34E6A01CF3504B52B3D71546 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = "glfw-3.3.7/src/mappings.h"; sourceTree = SOURCE_ROOT; };
+		3C9573E211BC4D15AB4EF9CF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Game.h; path = source/Game.h; sourceTree = SOURCE_ROOT; };
+		42F033FEAA004D28B5DC68D4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Bullets.h; path = source/Bullets.h; sourceTree = SOURCE_ROOT; };
+		44EC2CD98E7441DAB94C4B19 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.3.7/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		47BE12B40F984516BEBB4C88 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		498D96D5D1F74A8DA5C726D6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Ship.cpp; path = source/Ship.cpp; sourceTree = SOURCE_ROOT; };
+		503E9C922DE14CAB9BC4EA3E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = source/path/path.cpp; sourceTree = SOURCE_ROOT; };
+		5764909C73804ED783057625 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.3.7/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		5992B1AB60B0439C9ECE672F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
+		5D49D0CC0BCD4519B1C6BFDD /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.3.7/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		5D9E876619054325ABDDC3ED /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.3.7/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		60BD67EA222D442280279E2F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = "glfw-3.3.7/src/posix_thread.c"; sourceTree = SOURCE_ROOT; };
+		616E918E9ABF4C72956A4381 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.3.7/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		67F01A73967641719BBEBF8A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.3.7/src/window.c"; sourceTree = SOURCE_ROOT; };
+		6B2EAC9385624DADBF96A948 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = "glfw-3.3.7/src/egl_context.h"; sourceTree = SOURCE_ROOT; };
+		6F6872AC60B94706AF00AE41 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.3.7/src/init.c"; sourceTree = SOURCE_ROOT; };
+		7B15D20F9CF34D1CBEA41A70 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl.h; path = "glfw-3.3.7/deps/glad/gl.h"; sourceTree = SOURCE_ROOT; };
+		7B4628354C454C898BCA876A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7ED899A19A1840AE96CF2663 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8names.cpp; path = source/utils/u8names.cpp; sourceTree = SOURCE_ROOT; };
+		816B2D90AC3544BF9A6067A5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.3.7/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		88229EBBC68347399B290E4B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.3.7/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		8F638CD858C04C02AD4ADC09 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Bullets.cpp; path = source/Bullets.cpp; sourceTree = SOURCE_ROOT; };
+		8FF308BB405F40759859992C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = source/utils/lodepng.h; sourceTree = SOURCE_ROOT; };
+		9A913DE198534BB1A2839338 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		9C549B1147FC4199ADA00F0F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.3.7/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		A0B709C91E624DEEBBB13705 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = "glfw-3.3.7/src/egl_context.c"; sourceTree = SOURCE_ROOT; };
+		A1BD21DE45654E18AE2074A6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u8names.h; path = source/utils/u8names.h; sourceTree = SOURCE_ROOT; };
+		A5AFABDE80A54376AC015E75 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = GenerateMappings.cmake; path = "glfw-3.3.7/CMake/GenerateMappings.cmake"; sourceTree = SOURCE_ROOT; };
+		AC3C73160E8A4BA492F514E6 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6F36AA990A4AFBBE4AB813 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Bullets.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_Bullets.glsl; path = shaders/vshader_Bullets.glsl; sourceTree = SOURCE_ROOT; };
+		BB1872CCBAF14C21A3FE5CAC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Game.cpp; path = source/Game.cpp; sourceTree = SOURCE_ROOT; };
+		BBC8CCC2ECE148ACB00542CA /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Asteroid.h; path = source/Asteroid.h; sourceTree = SOURCE_ROOT; };
+		BE1279A920A148CE81D11787 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tinycthread.c; path = "glfw-3.3.7/deps/tinycthread.c"; sourceTree = SOURCE_ROOT; };
+		C1A002B71CD8462498DD89B9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.3.7/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		C5447436526C45799C30B90A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C85C755E44134F6C900FF5EB /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = source/utils/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		CC8BB00E89B4419CA793F290 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.3.7/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		CFA9919FCD274F7394516D5F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.3.7/src/input.c"; sourceTree = SOURCE_ROOT; };
+		CFC198EA988D41A094C12CB9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Ship.h; path = source/Ship.h; sourceTree = SOURCE_ROOT; };
+		DB2712CEFD054113BB746CCF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.3.7/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		DE04414D9B43420C93CB2CDA /* asteroids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = asteroids; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEC43A4B6524E368C338CE5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_gl.c; path = "glfw-3.3.7/deps/glad_gl.c"; sourceTree = SOURCE_ROOT; };
+		E0E6B586A87B48619347A2CE /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/utils/mat.h; sourceTree = SOURCE_ROOT; };
+		E8DDDC3193D2497BBC90F3F2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Bullets.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_Bullets.glsl; path = shaders/fshader_Bullets.glsl; sourceTree = SOURCE_ROOT; };
+		F061D636F5814A178D647E65 /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17A138F3F0F412CA4535E1C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = "glfw-3.3.7/src/posix_thread.h"; sourceTree = SOURCE_ROOT; };
+		F85B2F88E4DF4F89ACEE10B2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Texture.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_Texture.glsl; path = shaders/fshader_Texture.glsl; sourceTree = SOURCE_ROOT; };
+		F9E5AA09E7134B0294AC4DF9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_vulkan.c; path = "glfw-3.3.7/deps/glad_vulkan.c"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B7569745FE0466B990E5030 /* Frameworks */ = {
+		5E553F25F7B34C7EAE16A990 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1DB014708A9458D94D0ECA6 /* Frameworks */ = {
+		BFB19F0BB54B49E58003746E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E540F230D26F4FA8B2A4A434 /* Frameworks */ = {
+		CA4687BCC7FC42438B4FAD29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,264 +291,264 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		012737E0A9EA4B88972CE3EE /* asteroids */ = {
+		07F706835F6D4EA39A402F96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2FB349ABF2AE428881E6796D /* Header Files */,
-				8743CE9210344F6884D7E3D8 /* Source Files */,
-				3D03AF595C944FD8A4927C74 /* Resources */,
-				95CC4BB907EA4A81B01E5DC4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */,
-				E0AF24E045CA485082D27A3D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Bullets.glsl */,
-				9C0D07E9B30649C495C0AA60 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/fshader_Texture.glsl */,
-				58AA1DD5691C472F96D23A9B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Bullets.glsl */,
-				032C05AB79AA4744B315A7C3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders/vshader_Texture.glsl */,
-			);
-			name = asteroids;
-			sourceTree = "<group>";
-		};
-		018F3068B36B429AA09F61A1 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		10070EDCC76B466FB38BF398 /* GLFW3 */ = {
-			isa = PBXGroup;
-			children = (
-				BE3540362CD54E178658D57D /* update_mappings */,
-				9558F6F3E5B841BB9DC3B95E /* glfw */,
-			);
-			name = GLFW3;
-			sourceTree = "<group>";
-		};
-		195E0F92A6A34D61816BAD82 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		1EB3BA64EBD049E78F4FE0F8 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				17553053725A463D9DD34229 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_init.m */,
-				7C952AF431F0437F9167B38F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.m */,
-				6C7D601BB45A46D79E5E2590 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_monitor.m */,
-				D8BA28B4A5644A6B8654F381 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_time.c */,
-				1EA09C899D2C4CE4B29486C0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_window.m */,
-				31A1A6E65CD14918AD73B974 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/context.c */,
-				F2F4F0C244AC49F39B70AD66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.c */,
-				591762C3408846BFBD102BB0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/init.c */,
-				1E5011238910442FA2A9C7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/input.c */,
-				56562D6DD74F421B93DC59E2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/monitor.c */,
-				CF2FAB66DCA248F19D02F69F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.m */,
-				BD03CE93D76D40CB837D3B0F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.c */,
-				5D43B0A4C9ED47CDAB89795D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.c */,
-				380B89846EC54D7CB86425E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/vulkan.c */,
-				E29D9AD0C24844FCAFDED028 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/window.c */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		2FB349ABF2AE428881E6796D /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				39E91A2BD6814875A7F91A1E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.h */,
-				32CCBB14E9834827A9D97490 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.h */,
-				3302BEED293B4D97A1FA22AB /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.h */,
-				5A4B01D1578646728A71DDDF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.h */,
-				2D087F7ABE404E33BA8388D6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.h */,
-				861575B50B864B9FB31A00F2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/mat.h */,
-				43761E1B863A4D73A3A39066 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/shader_process.h */,
-				4AE28102CA844CC4BBB6AE2F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.h */,
-				2E76D15A60F24337B7DDDD96 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/vec.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		343BB01D549F44058D5AC182 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8A2C05D9D2E94B2881F4D46A /* asteroids */,
-				728A6418975E450B8F88081B /* glad */,
-				D8435AFA770E40328DACD21F /* glfw */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3D03AF595C944FD8A4927C74 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A98CDC13712741F59184E960 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist */,
+				21AA66C7D6F74D08A0AA99A2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		40FFD8CBCA734602A74E4174 /* Source Files */ = {
+		1202552724164F58919C04FC /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE244DF2D4974F5BB5813983 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_gl.c */,
-				3399852C35364DD99FE4D02C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_vulkan.c */,
-				70954AFAB1AE414F93269CE5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/tinycthread.c */,
+				23A477726CD54DCABF42A87E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.cpp */,
+				8F638CD858C04C02AD4ADC09 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.cpp */,
+				BB1872CCBAF14C21A3FE5CAC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.cpp */,
+				498D96D5D1F74A8DA5C726D6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.cpp */,
+				5992B1AB60B0439C9ECE672F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/main.cpp */,
+				503E9C922DE14CAB9BC4EA3E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp */,
+				C85C755E44134F6C900FF5EB /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.cpp */,
+				7ED899A19A1840AE96CF2663 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		5058F7731B794B96904CCF7D = {
+		15739B8DD5BE494390BE31A2 /* GLFW3 */ = {
 			isa = PBXGroup;
 			children = (
-				763C6D703DC34443A1D76EBA /* glad */,
-				012737E0A9EA4B88972CE3EE /* asteroids */,
-				CD77CE7FE5C24F7B8DFD96E3 /* ALL_BUILD */,
-				10070EDCC76B466FB38BF398 /* GLFW3 */,
-				343BB01D549F44058D5AC182 /* Products */,
-				9AB60E4E77D447C3B13AEC78 /* Frameworks */,
+				1A2FBAC6AF5F4CEF90CCF5B1 /* update_mappings */,
+				D481FC6A64A14192BDA465F7 /* glfw */,
 			);
+			name = GLFW3;
 			sourceTree = "<group>";
 		};
-		763C6D703DC34443A1D76EBA /* glad */ = {
+		1A2FBAC6AF5F4CEF90CCF5B1 /* update_mappings */ = {
 			isa = PBXGroup;
 			children = (
-				FF6FE1C4F25046B18C97B639 /* Header Files */,
-				40FFD8CBCA734602A74E4174 /* Source Files */,
-				348242BB59864A2584067D58 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */,
+				9C760529843C499786AE4A30 /* Header Files */,
+				E3A12C57B8AE4D48888C6DB5 /* CMake Rules */,
+				A5AFABDE80A54376AC015E75 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake */,
+				9A913DE198534BB1A2839338 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */,
 			);
-			name = glad;
+			name = update_mappings;
 			sourceTree = "<group>";
 		};
-		8743CE9210344F6884D7E3D8 /* Source Files */ = {
+		37F9A79010B4465FBEED652D /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				678C588DAB334AEA8EC88954 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.cpp */,
-				DB4D746F22D54AEA91E953AD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.cpp */,
-				DE4FEDAC3C2D401CA3F07735 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.cpp */,
-				DB3FBF400C754EFD8E1406FF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.cpp */,
-				579815DD6EDD49E0A242A49A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/main.cpp */,
-				3FC43EB84B7D4EFEB02F7FBD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp */,
-				99E3F762042D4AAE9161577F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.cpp */,
-				34CA3B2D31384A798DA98F66 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp */,
 			);
-			name = "Source Files";
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		9558F6F3E5B841BB9DC3B95E /* glfw */ = {
+		490F5E2E21674BECA1DDD654 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				1EB3BA64EBD049E78F4FE0F8 /* Source Files */,
-				F83FFA1966F346AD94FD42E6 /* Header Files */,
-				795B0E270F09485489BC5B12 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */,
-			);
-			name = glfw;
-			sourceTree = "<group>";
-		};
-		958324623E94496BAEB4001C /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB343391F96348189A2CD255 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h.in */,
+				1A75B882906448B2B68A1212 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/glfw_config.h */,
+				5764909C73804ED783057625 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3.h */,
+				DB2712CEFD054113BB746CCF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include/GLFW/glfw3native.h */,
+				CC8BB00E89B4419CA793F290 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.h */,
+				88229EBBC68347399B290E4B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_platform.h */,
+				6B2EAC9385624DADBF96A948 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.h */,
+				C1A002B71CD8462498DD89B9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/internal.h */,
+				34E6A01CF3504B52B3D71546 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h */,
+				9C549B1147FC4199ADA00F0F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.h */,
+				322CE48FAC584286A9AF409F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.h */,
+				F17A138F3F0F412CA4535E1C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		9AB60E4E77D447C3B13AEC78 /* Frameworks */ = {
+		59ED63686EEA4DBDAA22E64A /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B15D20F9CF34D1CBEA41A70 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad/gl.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		68EAEC1D85AE4FDE8481B5DF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				37F9A79010B4465FBEED652D /* CMake Rules */,
+				09C81CBC7C3B442AB62A966A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		89955ABE72E542AE953821AC /* asteroids */ = {
+			isa = PBXGroup;
+			children = (
+				C493EBA005BC483793534A5E /* Header Files */,
+				1202552724164F58919C04FC /* Source Files */,
+				07F706835F6D4EA39A402F96 /* Resources */,
+				C5447436526C45799C30B90A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */,
+				E8DDDC3193D2497BBC90F3F2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Bullets.glsl */,
+				F85B2F88E4DF4F89ACEE10B2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/fshader_Texture.glsl */,
+				AD6F36AA990A4AFBBE4AB813 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Bullets.glsl */,
+				00ECD5A5B74B4D7499CFE9D7 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders/vshader_Texture.glsl */,
+			);
+			name = asteroids;
+			sourceTree = "<group>";
+		};
+		8B35DA26750C49C59D6A9D7E = {
+			isa = PBXGroup;
+			children = (
+				A98B7AFD7C2643CC9CF411AD /* glad */,
+				89955ABE72E542AE953821AC /* asteroids */,
+				68EAEC1D85AE4FDE8481B5DF /* ALL_BUILD */,
+				15739B8DD5BE494390BE31A2 /* GLFW3 */,
+				A6A0A6117797413BA767FBF5 /* Products */,
+				F7B9B74D10844225BE1EAFFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C760529843C499786AE4A30 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E584C97258B4DB99CFE1713 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/mappings.h.in */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A665AFCF3F7748F3A5E0BAC5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				154F62844CE54F8C80826686 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_init.m */,
+				5D9E876619054325ABDDC3ED /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.m */,
+				44EC2CD98E7441DAB94C4B19 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_monitor.m */,
+				816B2D90AC3544BF9A6067A5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_time.c */,
+				616E918E9ABF4C72956A4381 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_window.m */,
+				2A8283C011FB4B8B90F0BF54 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/context.c */,
+				A0B709C91E624DEEBBB13705 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.c */,
+				6F6872AC60B94706AF00AE41 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/init.c */,
+				CFA9919FCD274F7394516D5F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/input.c */,
+				12F16C69D5DF444A9999C54B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/monitor.c */,
+				0182DE8F1CE54AA782D9A079 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.m */,
+				1E4CB4F6A582443AAC0D0E5B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.c */,
+				60BD67EA222D442280279E2F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.c */,
+				5D49D0CC0BCD4519B1C6BFDD /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/vulkan.c */,
+				67F01A73967641719BBEBF8A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A6A0A6117797413BA767FBF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE04414D9B43420C93CB2CDA /* asteroids */,
+				F061D636F5814A178D647E65 /* glad */,
+				AC3C73160E8A4BA492F514E6 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A87E211540204D36BBE05D49 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC43A4B6524E368C338CE5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_gl.c */,
+				F9E5AA09E7134B0294AC4DF9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_vulkan.c */,
+				BE1279A920A148CE81D11787 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/tinycthread.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A98B7AFD7C2643CC9CF411AD /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				59ED63686EEA4DBDAA22E64A /* Header Files */,
+				A87E211540204D36BBE05D49 /* Source Files */,
+				7B4628354C454C898BCA876A /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		C493EBA005BC483793534A5E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC8CCC2ECE148ACB00542CA /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.h */,
+				42F033FEAA004D28B5DC68D4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.h */,
+				3C9573E211BC4D15AB4EF9CF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.h */,
+				CFC198EA988D41A094C12CB9 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.h */,
+				8FF308BB405F40759859992C /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.h */,
+				E0E6B586A87B48619347A2CE /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/mat.h */,
+				2A88F38AA50E4141923BB40B /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/shader_process.h */,
+				A1BD21DE45654E18AE2074A6 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.h */,
+				1B32316257714AC9B0FB0BA4 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/vec.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		D481FC6A64A14192BDA465F7 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				A665AFCF3F7748F3A5E0BAC5 /* Source Files */,
+				490F5E2E21674BECA1DDD654 /* Header Files */,
+				47BE12B40F984516BEBB4C88 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		E3A12C57B8AE4D48888C6DB5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F7B9B74D10844225BE1EAFFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE3540362CD54E178658D57D /* update_mappings */ = {
-			isa = PBXGroup;
-			children = (
-				958324623E94496BAEB4001C /* Header Files */,
-				018F3068B36B429AA09F61A1 /* CMake Rules */,
-				C211F2FEA8F94CF4A1A75FEE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake */,
-				B1592C5958EE4E05AEDB1BE5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt */,
-			);
-			name = update_mappings;
-			sourceTree = "<group>";
-		};
-		CD77CE7FE5C24F7B8DFD96E3 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				195E0F92A6A34D61816BAD82 /* CMake Rules */,
-				415B1F008C004A9EABB88388 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		F83FFA1966F346AD94FD42E6 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				B31A092CD41D4458A53D4090 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/glfw_config.h */,
-				9511027BC1354544BB5B2CF5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3.h */,
-				61F61455A5704BE09CE68185 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include/GLFW/glfw3native.h */,
-				8ABF3A92D0C540B28000F7C8 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.h */,
-				FD134D5FEAAE493084C1800E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_platform.h */,
-				4934E2DCD604437489098866 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.h */,
-				DC0B93F170514C76AF29786F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/internal.h */,
-				EB36701B216B4ABEA2A4FF56 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/mappings.h */,
-				07FF67E51DD04973A3DD71EC /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.h */,
-				A5FF4EC3EF1C451189744512 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.h */,
-				7EB1426601C949B9BB66F42D /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		FF6FE1C4F25046B18C97B639 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				C520759AA2D24F41B1C153C2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad/gl.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		280882F5603A46F0A33F550E /* glad */ = {
+		84635DDB10B14D0B80C59B1F /* asteroids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF2A21B0BC994A21B45D6A22 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildConfigurationList = 74F57ED2622A4ACAA9A773D7 /* Build configuration list for PBXNativeTarget "asteroids" */;
 			buildPhases = (
-				D14F17FD226848D5B047C75C /* Sources */,
-				D1DB014708A9458D94D0ECA6 /* Frameworks */,
+				8AED0FD8C0844452BDAB224A /* Sources */,
+				5E553F25F7B34C7EAE16A990 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0270057CC8D498F8BA72E7F /* PBXTargetDependency */,
-				329BB1D50FD24D2CA8C12080 /* PBXTargetDependency */,
-			);
-			name = glad;
-			productName = glad;
-			productReference = 728A6418975E450B8F88081B /* glad */;
-			productType = "com.apple.product-type.library.static";
-		};
-		55BB82B3EFCE464FAA770060 /* asteroids */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5A0128DA173740B48ACD02B7 /* Build configuration list for PBXNativeTarget "asteroids" */;
-			buildPhases = (
-				9DAE537A8A9942FB90BC93E3 /* Sources */,
-				7B7569745FE0466B990E5030 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				452F6DC749DD41BE9F781FC4 /* PBXTargetDependency */,
-				878AC0536E504C48B80E7CC6 /* PBXTargetDependency */,
-				8192F8457792402C93223C6C /* PBXTargetDependency */,
+				313EC76EF11B497AB7D9B26B /* PBXTargetDependency */,
+				B1FB82B507B74BA49488A656 /* PBXTargetDependency */,
+				1271FCD0AF834ECD93BA1850 /* PBXTargetDependency */,
 			);
 			name = asteroids;
 			productName = asteroids;
-			productReference = 8A2C05D9D2E94B2881F4D46A /* asteroids */;
+			productReference = DE04414D9B43420C93CB2CDA /* asteroids */;
 			productType = "com.apple.product-type.application";
 		};
-		954F6C876C0546B0ABDAB815 /* glfw */ = {
+		E177CDA7A46F4AB9A0B67973 /* glad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3C8662A4CFA42679C166B69 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildConfigurationList = 5C2DDE0B82CC4B2080B7FAFD /* Build configuration list for PBXNativeTarget "glad" */;
 			buildPhases = (
-				7BA8BA93D350499B8EF6DFCC /* Sources */,
-				E540F230D26F4FA8B2A4A434 /* Frameworks */,
+				0898CB98C5844623BA89F98A /* Sources */,
+				BFB19F0BB54B49E58003746E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5386D4CBB2AD46F089967FEF /* PBXTargetDependency */,
+				6DA20ABFCDAC437EBE54A206 /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = F061D636F5814A178D647E65 /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0E445C54581406680C29521 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B2558113754475BCC8B909 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				5163ED162DEF4B2FA91D7236 /* Sources */,
+				CA4687BCC7FC42438B4FAD29 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -556,45 +556,45 @@
 			);
 			name = glfw;
 			productName = glfw;
-			productReference = D8435AFA770E40328DACD21F /* glfw */;
+			productReference = AC3C73160E8A4BA492F514E6 /* glfw */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F94506CBA35D45BE83A7C0A7 /* Project object */ = {
+		1540B293329D42899A52932E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 			};
-			buildConfigurationList = AD92F43B64E140E4B79C981F /* Build configuration list for PBXProject "ASTEROIDS" */;
+			buildConfigurationList = 12948908BC07481EB209925F /* Build configuration list for PBXProject "ASTEROIDS" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				4C7FFA48BFDA4C709490E4AF /* Debug */,
-				07F05BC55F584652B1FF2118 /* Release */,
-				8BB0CECE12E0435BB708180A /* MinSizeRel */,
-				0A54E129430C4B8D8EEE989D /* RelWithDebInfo */,
+				94CA5A66884A42118AB18DFD /* Debug */,
+				8BBAF844F4664B53BD680A17 /* Release */,
+				7002F65F011A47AE9592FED9 /* MinSizeRel */,
+				C79A909D5BFD416A9E988E83 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 5058F7731B794B96904CCF7D;
-			projectDirPath = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD";
+			mainGroup = 8B35DA26750C49C59D6A9D7E;
+			projectDirPath = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy";
 			projectRoot = "";
 			targets = (
-				496DD1D27072443CB9C5AC1C /* ALL_BUILD */,
-				6426E4F8F6CD4883A1444F39 /* ZERO_CHECK */,
-				55BB82B3EFCE464FAA770060 /* asteroids */,
-				280882F5603A46F0A33F550E /* glad */,
-				954F6C876C0546B0ABDAB815 /* glfw */,
-				53DE28B873F740A09BDB4CE1 /* update_mappings */,
+				C4EE3F3B150444C1BEF72C8D /* ALL_BUILD */,
+				D0F2469F565E48A1AB8E2F0D /* ZERO_CHECK */,
+				84635DDB10B14D0B80C59B1F /* asteroids */,
+				E177CDA7A46F4AB9A0B67973 /* glad */,
+				F0E445C54581406680C29521 /* glfw */,
+				E2C2E6C7428B474099387A4C /* update_mappings */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B4EB23F496C7AC649D761EF /* Generate CMakeFiles/ALL_BUILD */ = {
+		30C72156355F24135BE6ECF0 /* Generate CMakeFiles/ALL_BUILD */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -604,24 +604,24 @@
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/ALL_BUILD"			);
+"/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/ALL_BUILD"			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
   echo Build\\ all\\ projects
 fi
 ";
@@ -642,39 +642,6 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		6F686177F70DCDD8D464B8E2 /* Generate CMakeFiles/ZERO_CHECK */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/ZERO_CHECK";
-			outputPaths = (
-"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/ZERO_CHECK"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
-  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
-  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
-  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
-  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeScripts/ReRunCMake.make
-fi
-";
-			showEnvVarsInLog = 0;
-		};
 		9B50530E35CC49C82C2FACCF = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -688,6 +655,39 @@ fi
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here
 exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D45EFFABC6A71BE02271F372 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate glfw-3.3.7/src/CMakeFiles/update_mappings";
+			outputPaths = (
+"/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/CMakeFiles/update_mappings"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+";
 			showEnvVarsInLog = 0;
 		};
 		EF220574C043FA76D2683574 = {
@@ -705,7 +705,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		F02D45562B5436D7D311D672 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */ = {
+		F15BFA1AA8EA63910804AA6D /* Generate CMakeFiles/ZERO_CHECK */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -713,27 +713,27 @@ exit 0";
 			);
 			inputPaths = (
 			);
-			name = "Generate glfw-3.3.7/src/CMakeFiles/update_mappings";
+			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/CMakeFiles/update_mappings"			);
+"/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/ZERO_CHECK"			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src
-  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
+  make -f /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeScripts/ReRunCMake.make
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src
-  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
+  make -f /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeScripts/ReRunCMake.make
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src
-  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
+  make -f /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeScripts/ReRunCMake.make
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src
-  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  cd /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build
+  make -f /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeScripts/ReRunCMake.make
 fi
 ";
 			showEnvVarsInLog = 0;
@@ -741,380 +741,130 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7BA8BA93D350499B8EF6DFCC /* Sources */ = {
+		0898CB98C5844623BA89F98A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E26F6D91554820B793CA06 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_init.m */,
-				C4AB98BE0EC64408BC013E8E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_joystick.m */,
-				479E9587DF0F41A68C45DA41 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_monitor.m */,
-				2B0C170FE1D64E25A052A014 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_time.c */,
-				BA6EF8C434C2415A932B985F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/cocoa_window.m */,
-				14FAEFDB544948699996BE50 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/context.c */,
-				B6CDDE7AAC1548A6B94B4A96 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/egl_context.c */,
-				D8D8816CBCF34925A279F797 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/init.c */,
-				74BE0BD829904FD0AA150993 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/input.c */,
-				AB7742281A524AB9A478D1F1 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/monitor.c */,
-				6C5FB17B5EB74E50B259B644 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/nsgl_context.m */,
-				08FFF7A9C2EC4D05BE1C46D7 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/osmesa_context.c */,
-				9E351B24A1E942028D153D44 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/posix_thread.c */,
-				827D245369F344E5AC174C40 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/vulkan.c */,
-				80105D369E3B4A529174D233 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/window.c */,
+				1D27E23B51404F298123DB88 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_gl.c */,
+				0A2B10FD4F144307B96579DB /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/glad_vulkan.c */,
+				DEA0BA0A247B49A7A5E2BD48 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps/tinycthread.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DAE537A8A9942FB90BC93E3 /* Sources */ = {
+		5163ED162DEF4B2FA91D7236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B541B0DE2A4108AE203E79 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Asteroid.cpp */,
-				5F81993ACCBB49D9A8771593 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Bullets.cpp */,
-				B29E0E693FB642FABC6836CF /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Game.cpp */,
-				3F25AD2C600742B89D0BA827 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/Ship.cpp */,
-				5AA4D5E4B39A491DA5650C07 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/main.cpp */,
-				8E6717BD79CB4D629474773A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp */,
-				93004CCE56FA49BD9C686568 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/lodepng.cpp */,
-				8D07AD731FC2409089ED2C7E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp */,
+				CFC4DE5D1B1443E285677C79 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_init.m */,
+				43031424B7BF4C648CFE5F9E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_joystick.m */,
+				6009A69CEDD24146A3717B14 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_monitor.m */,
+				A22B808B4D8843E8AB03A447 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_time.c */,
+				EF4716E0564943CE82A5461E /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/cocoa_window.m */,
+				BB4A52B0EE5346A6A4917FF5 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/context.c */,
+				02F8516706764CB89D228A19 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/egl_context.c */,
+				2EB80F9F277B4EBCB5B66274 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/init.c */,
+				A2BE3CFFF0CD44E9813A1443 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/input.c */,
+				8D55930668FF416F8C809847 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/monitor.c */,
+				A778C618FB0843D786161144 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/nsgl_context.m */,
+				451FC17ABC4E4E75A6911275 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/osmesa_context.c */,
+				1CE8AD9386B442FEA3271E61 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/posix_thread.c */,
+				7BB49A984D424A4EBFED1639 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/vulkan.c */,
+				8318F4B01F0F4952882EB73F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/window.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14F17FD226848D5B047C75C /* Sources */ = {
+		8AED0FD8C0844452BDAB224A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C86CE53E56C4878836D1880 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_gl.c */,
-				641B49940B44451295B38543 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/glad_vulkan.c */,
-				8550BB3D044A4F1F8F43AC41 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps/tinycthread.c */,
+				73C80B69660C4F8A86549CC2 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Asteroid.cpp */,
+				D9BDF4637B1E44A58E9A3E45 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Bullets.cpp */,
+				5F852EE25A1E4D0C9840B532 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Game.cpp */,
+				B06032FD230B423B95F86B63 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/Ship.cpp */,
+				C6478CE03AD14F50A99F62B0 /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/main.cpp */,
+				DE00211E4E8440E580BC173F /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp */,
+				06F4C73BC1564E5899BCBBCC /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/lodepng.cpp */,
+				BC881A2870FE4A09A15D59AF /* /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EA0D2FB8817434EB9824DE0 /* PBXTargetDependency */ = {
+		1271FCD0AF834ECD93BA1850 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 954F6C876C0546B0ABDAB815 /* glfw */;
-			targetProxy = 2E198BD5FB1B4F80AB56AAD7 /* PBXContainerItemProxy */;
+			target = D0F2469F565E48A1AB8E2F0D /* ZERO_CHECK */;
+			targetProxy = A3D7CAE0BFA643128AB963A5 /* PBXContainerItemProxy */;
 		};
-		329BB1D50FD24D2CA8C12080 /* PBXTargetDependency */ = {
+		279DE90765E04B3F86F1E37E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6426E4F8F6CD4883A1444F39 /* ZERO_CHECK */;
-			targetProxy = 56F04C2FD36A4E5A92CE7A86 /* PBXContainerItemProxy */;
+			target = D0F2469F565E48A1AB8E2F0D /* ZERO_CHECK */;
+			targetProxy = 4AD83F0DBC394CE19F0FAABC /* PBXContainerItemProxy */;
 		};
-		34A33EC005504C04B5615BF8 /* PBXTargetDependency */ = {
+		313EC76EF11B497AB7D9B26B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6426E4F8F6CD4883A1444F39 /* ZERO_CHECK */;
-			targetProxy = 6E85B66BC1844175A1D2BA29 /* PBXContainerItemProxy */;
+			target = F0E445C54581406680C29521 /* glfw */;
+			targetProxy = 0C1C4F7A6EE746B2B67D3914 /* PBXContainerItemProxy */;
 		};
-		452F6DC749DD41BE9F781FC4 /* PBXTargetDependency */ = {
+		5386D4CBB2AD46F089967FEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 954F6C876C0546B0ABDAB815 /* glfw */;
-			targetProxy = 05C210F64AE046BEA0F14D30 /* PBXContainerItemProxy */;
+			target = F0E445C54581406680C29521 /* glfw */;
+			targetProxy = 4081FB6C939C470D9B526D57 /* PBXContainerItemProxy */;
 		};
-		8192F8457792402C93223C6C /* PBXTargetDependency */ = {
+		6DA20ABFCDAC437EBE54A206 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6426E4F8F6CD4883A1444F39 /* ZERO_CHECK */;
-			targetProxy = 2C1D7BEBB65E4B869A21BB36 /* PBXContainerItemProxy */;
+			target = D0F2469F565E48A1AB8E2F0D /* ZERO_CHECK */;
+			targetProxy = 0B0503FFA4714EAFBF3D0858 /* PBXContainerItemProxy */;
 		};
-		878AC0536E504C48B80E7CC6 /* PBXTargetDependency */ = {
+		87F0E15AAA1E43A7BFD31B8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 280882F5603A46F0A33F550E /* glad */;
-			targetProxy = 699091D4464E4FDAB326E002 /* PBXContainerItemProxy */;
+			target = 84635DDB10B14D0B80C59B1F /* asteroids */;
+			targetProxy = 24D0F9D424A44BD399825C33 /* PBXContainerItemProxy */;
 		};
-		B01AF9CB9CB64026B2A8FE69 /* PBXTargetDependency */ = {
+		927D2226B1F34F9D9551C7CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 280882F5603A46F0A33F550E /* glad */;
-			targetProxy = 02B8157D4F6B4CD49081EBE9 /* PBXContainerItemProxy */;
+			target = E177CDA7A46F4AB9A0B67973 /* glad */;
+			targetProxy = 234426C9074B4BD288210D1A /* PBXContainerItemProxy */;
 		};
-		B5EA1E21AFDA41B4BEFE288E /* PBXTargetDependency */ = {
+		946668FC56E947B3BF897DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 55BB82B3EFCE464FAA770060 /* asteroids */;
-			targetProxy = 72B402F49DCA43908B8022B7 /* PBXContainerItemProxy */;
+			target = F0E445C54581406680C29521 /* glfw */;
+			targetProxy = F2603077F42A4C3E8A08708D /* PBXContainerItemProxy */;
 		};
-		E0270057CC8D498F8BA72E7F /* PBXTargetDependency */ = {
+		B1FB82B507B74BA49488A656 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 954F6C876C0546B0ABDAB815 /* glfw */;
-			targetProxy = 0DA0C9EE45E14672849B4AA7 /* PBXContainerItemProxy */;
+			target = E177CDA7A46F4AB9A0B67973 /* glad */;
+			targetProxy = FEFD8D5B12F64B479D58F831 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AE99ABD83264A92800B373C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/build";
-			};
-			name = Release;
-		};
-		0BB2AEB1DA3C48E2A274930D /* RelWithDebInfo */ = {
+		0A163AED34C245C09E8435A0 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
 				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glad;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		177C10BD666F4BD8B845907F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		2C22AB91DBC946748B9A623A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		43CDB128A60D4CFA8E09960C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		49C85628B78D4C32AB109772 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/build";
-			};
-			name = Debug;
-		};
-		4B816947F96A40338D6CB274 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		56544097700B49258385D9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INFOPLIST_FILE = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/Debug/libglfw3.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/Debug/libglad.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/Debug/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = asteroids;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		5B97761C856C4684AAE0A3FE /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/build";
-			};
-			name = RelWithDebInfo;
-		};
-		5ECFD3E61DB045AB8046F8A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INFOPLIST_FILE = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/Release/libglfw3.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/Release/libglad.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/Release/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = asteroids;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		63B11C43B1114F81B54BF998 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("   -fPIC -Wall '-std=gnu99' ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		658F4B638D204293A5947F53 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6D831451FC384085AEEA1DE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		6F69E6C70CDD4DE38D82EB18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = update_mappings;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		85BD0EFA7D474B55ADB86617 /* RelWithDebInfo */ = {
+		180E64DAB5AF41E893AFDD96 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1125,7 +875,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
@@ -1133,163 +883,23 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		86C84DECEE294B5CB7B3CCFA /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INFOPLIST_FILE = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/MinSizeRel/libglfw3.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/MinSizeRel/libglad.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/MinSizeRel/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = asteroids;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		8A615D2C4199452389BC288D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		8DD910FC3DFC42408E8B7A18 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = update_mappings;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		8E688810FD0F46C3A48D5FCE /* MinSizeRel */ = {
+		2179760540EB406BAAE6B783 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/build";
-			};
-			name = MinSizeRel;
-		};
-		9A607E4BFC8C4A02AEF35B52 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		9B525E8ADAC84B68AA1C9F77 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INFOPLIST_FILE = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/asteroids.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/RelWithDebInfo/libglad.a","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = asteroids;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/build";
 			};
 			name = RelWithDebInfo;
 		};
-		A606C7D57734486D8A9BF3FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		AB18A327A3434F57A76F77C6 /* RelWithDebInfo */ = {
+		2698148BE42041FDA6B1AD5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1303,58 +913,13 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		B3AFFC4D103A4B73A060805A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/deps","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/common","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/shaders","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("   ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		BEDC98C88EE04580B6A4068F /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = update_mappings;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		CDFEA0A651914A6BBA1B7A3B /* MinSizeRel */ = {
+		2B24B0D99EAA4036A08438BE /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1365,7 +930,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
@@ -1373,13 +938,38 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		E45602450CC34203952DA16B /* Debug */ = {
+		32450378B99747E5ABEE64A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3F2C6F90236244C0B8E05C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1393,13 +983,38 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = update_mappings;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		50AFFBB03AC84F7D9421D596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		F4DC008231F14B11BFCAB275 /* Release */ = {
+		8196858FB23E478588571BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1413,7 +1028,392 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		81A768F9A52B4019848A2688 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8467C5AD66C84A469EBDCE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8A9F5FEDD09F4FADB8D2AE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9DE2BE35C1E24F87AAFB593C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/build";
+			};
+			name = MinSizeRel;
+		};
+		A039FFD028BA4C1EA412232F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A73799E347774AF7A886A34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/build";
+			};
+			name = Release;
+		};
+		BC430ED780A6421A8838E6F9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C3201A1DC0444522A315EA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INFOPLIST_FILE = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/Release/libglfw3.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/Release/libglad.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/Release/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C34A7DD7D79E4B8FB61555DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C7FB7B7E0BF243EBBB7DF666 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D06022BFC6E64CC08A5F488C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DA30BE5BDB124DA58A792937 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INFOPLIST_FILE = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/MinSizeRel/libglfw3.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/MinSizeRel/libglad.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/MinSizeRel/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E6CEC514075D4BCF82CC6DAB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EFC7BCA9F05C4DA8819361A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INFOPLIST_FILE = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/Debug/libglfw3.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/Debug/libglad.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/Debug/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F1702E645D594C61A5A103CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/build";
+			};
+			name = Debug;
+		};
+		F1E71504C3A94827BC0C10ED /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F964D5F3E3A3455380A1EC74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/deps","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/common","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/shaders","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/include","$(inherited)");
+				INFOPLIST_FILE = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/RelWithDebInfo/libglad.a","/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FB82002F25E040EF8487816F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FE4398E433A2460994B22B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
@@ -1422,84 +1422,84 @@ fi
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A0128DA173740B48ACD02B7 /* Build configuration list for PBXNativeTarget "asteroids" */ = {
+		0108086C68874A44863BA037 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56544097700B49258385D9CD /* Debug */,
-				5ECFD3E61DB045AB8046F8A5 /* Release */,
-				86C84DECEE294B5CB7B3CCFA /* MinSizeRel */,
-				9B525E8ADAC84B68AA1C9F77 /* RelWithDebInfo */,
+				8467C5AD66C84A469EBDCE2D /* Debug */,
+				8196858FB23E478588571BE4 /* Release */,
+				FB82002F25E040EF8487816F /* MinSizeRel */,
+				E6CEC514075D4BCF82CC6DAB /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		AD92F43B64E140E4B79C981F /* Build configuration list for PBXProject "ASTEROIDS" */ = {
+		12948908BC07481EB209925F /* Build configuration list for PBXProject "ASTEROIDS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49C85628B78D4C32AB109772 /* Debug */,
-				0AE99ABD83264A92800B373C /* Release */,
-				8E688810FD0F46C3A48D5FCE /* MinSizeRel */,
-				5B97761C856C4684AAE0A3FE /* RelWithDebInfo */,
+				F1702E645D594C61A5A103CC /* Debug */,
+				A73799E347774AF7A886A34E /* Release */,
+				9DE2BE35C1E24F87AAFB593C /* MinSizeRel */,
+				2179760540EB406BAAE6B783 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BF2A21B0BC994A21B45D6A22 /* Build configuration list for PBXNativeTarget "glad" */ = {
+		1FF08472CB4B4F96ABBF8CB5 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3AFFC4D103A4B73A060805A /* Debug */,
-				8A615D2C4199452389BC288D /* Release */,
-				9A607E4BFC8C4A02AEF35B52 /* MinSizeRel */,
-				0BB2AEB1DA3C48E2A274930D /* RelWithDebInfo */,
+				2698148BE42041FDA6B1AD5D /* Debug */,
+				FE4398E433A2460994B22B80 /* Release */,
+				BC430ED780A6421A8838E6F9 /* MinSizeRel */,
+				A039FFD028BA4C1EA412232F /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C046553D07AA4F6AA7CFD82D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		5C2DDE0B82CC4B2080B7FAFD /* Build configuration list for PBXNativeTarget "glad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A606C7D57734486D8A9BF3FF /* Debug */,
-				F4DC008231F14B11BFCAB275 /* Release */,
-				43CDB128A60D4CFA8E09960C /* MinSizeRel */,
-				658F4B638D204293A5947F53 /* RelWithDebInfo */,
+				8A9F5FEDD09F4FADB8D2AE8C /* Debug */,
+				C34A7DD7D79E4B8FB61555DC /* Release */,
+				0A163AED34C245C09E8435A0 /* MinSizeRel */,
+				F1E71504C3A94827BC0C10ED /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C3C8662A4CFA42679C166B69 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+		623F0A7CCD9E41FF9174078A /* Build configuration list for PBXAggregateTarget "update_mappings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63B11C43B1114F81B54BF998 /* Debug */,
-				2C22AB91DBC946748B9A623A /* Release */,
-				CDFEA0A651914A6BBA1B7A3B /* MinSizeRel */,
-				85BD0EFA7D474B55ADB86617 /* RelWithDebInfo */,
+				D06022BFC6E64CC08A5F488C /* Debug */,
+				3F2C6F90236244C0B8E05C5A /* Release */,
+				C7FB7B7E0BF243EBBB7DF666 /* MinSizeRel */,
+				81A768F9A52B4019848A2688 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C3F0FA6340BC464F92417B8E /* Build configuration list for PBXAggregateTarget "update_mappings" */ = {
+		74F57ED2622A4ACAA9A773D7 /* Build configuration list for PBXNativeTarget "asteroids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E45602450CC34203952DA16B /* Debug */,
-				6F69E6C70CDD4DE38D82EB18 /* Release */,
-				BEDC98C88EE04580B6A4068F /* MinSizeRel */,
-				8DD910FC3DFC42408E8B7A18 /* RelWithDebInfo */,
+				EFC7BCA9F05C4DA8819361A8 /* Debug */,
+				C3201A1DC0444522A315EA09 /* Release */,
+				DA30BE5BDB124DA58A792937 /* MinSizeRel */,
+				F964D5F3E3A3455380A1EC74 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D85E0B06BB874F4AA33B29B3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		F4B2558113754475BCC8B909 /* Build configuration list for PBXNativeTarget "glfw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				177C10BD666F4BD8B845907F /* Debug */,
-				6D831451FC384085AEEA1DE7 /* Release */,
-				4B816947F96A40338D6CB274 /* MinSizeRel */,
-				AB18A327A3434F57A76F77C6 /* RelWithDebInfo */,
+				50AFFBB03AC84F7D9421D596 /* Debug */,
+				32450378B99747E5ABEE64A9 /* Release */,
+				2B24B0D99EAA4036A08438BE /* MinSizeRel */,
+				180E64DAB5AF41E893AFDD96 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F94506CBA35D45BE83A7C0A7 /* Project object */;
+	rootObject = 1540B293329D42899A52932E /* Project object */;
 }

@@ -17,11 +17,11 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Cont
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.24/Modules/GNUInstallDirs.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/glfw3.pc.in))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/glfw3Config.cmake.in))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7/src/glfw_config.h.in))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/glfw3.pc.in))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/glfw3Config.cmake.in))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7/src/glfw_config.h.in))
 
-/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/Applications/CMake.app/Contents/bin/cmake -H/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD -B/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build
+/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/Applications/CMake.app/Contents/bin/cmake -H/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy -B/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build

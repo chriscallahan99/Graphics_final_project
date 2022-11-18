@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.cpp \
-  /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/utils/u8names.h
+  /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.cpp \
+  /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/utils/u8names.h
