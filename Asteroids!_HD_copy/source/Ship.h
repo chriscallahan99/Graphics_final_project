@@ -59,7 +59,7 @@ class Ship{
     vec2 cur_location;
     vec4 pointing;
     vec2 velocity;
-    bool thruster_on;
+    bool jump_on;
     uint8_t turning;
     float angle;
   } state;
@@ -82,13 +82,12 @@ class Ship{
   
   
 public:
-  
-  
 
   Ship();
   
-  inline void start_thruster(){ state.thruster_on= true;}
-  inline void stop_thruster() { state.thruster_on= false;}
+  inline void start_jump(){ state.jump_on= true;}
+  inline void is_jumping(){ state.jump_on= true;}
+  inline void stop_thruster() { state.jump_on= false;}
   
   inline void rotateLeft() {
     state.turning = _TURN_LEFT;
