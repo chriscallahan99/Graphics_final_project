@@ -22,7 +22,7 @@ Ship::Ship(){
   state.angle = 0.0;
   
   max_speed = 0.05;
-  damping_fact = 0.50;
+  damping_fact = 0.7;
   accel = 0.008;
   
   ship_pos.resize(16);
@@ -212,56 +212,60 @@ Ship::Ship(){
 };
 
 // TODO
-// Add slanted movement per stairs
+// Add slanted movement for stairs
+// Include distance from platform for mario to impact jump where if mario is 2 units away from platform subtract from velocity until mario y = platform y
+// Make platform y = platform heights + step formula
+// Lock movement when jumping
 //
 void Ship::update_state(vec4 extents){
-  /*  if(state.jump_on){
-        state.velocity += accel* vec2(state.pointing.x, state.pointing.y);
-        if(length(state.velocity) > max_speed){
-            state.velocity = normalize(state.velocity);
-            state.velocity*=max_speed;
+    
+    // Mario's movement on first platform
+    // since start platform is flat, movement logic works
+    
+    if(is_start_platform){
+        
+        // Moves sprite left
+        if(state.turning == _TURN_LEFT){
+            std::cout << state.cur_location << std::cout;
+            state.velocity -= .15 * vec2(1.0, 0.0);
+            if(length(state.velocity) > max_speed){
+                state.velocity = normalize(state.velocity);
+                state.velocity*=max_speed;
+            }
+        }
+        
+        // Moves sprite right
+        if(state.turning == _TURN_RIGHT){
+            std::cout << state.cur_location << std::cout;
+            state.velocity += .15 * vec2(1.0, 0.0);
+            if(length(state.velocity) > max_speed){
+                state.velocity = normalize(state.velocity);
+                state.velocity*=max_speed;
+            }
+        }
+        
+        // TODO Add lots of platform vectors, or fix jump somehow.
+        // "jump" movement
+        
+        // Make it so all other movement is locked. (no turning, no changing directions)
+        if(state.jump_on == true){
+            state.velocity += .15 * vec2(0.0, 1.0);
+        }
+        
+        // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
+        if(state.velocity.y > .01){
+            state.velocity.y -=.03 ;
+        }
+        
+        if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
+            state.velocity.y -=.2;
         }
     }
     
-   */
-    
-    // Moves sprite left
-    if(state.turning == _TURN_LEFT){
-        std::cout << state.cur_location << std::cout;
-        state.velocity -= .15 * vec2(1.0, 0.0);
-        if(length(state.velocity) > max_speed){
-            state.velocity = normalize(state.velocity);
-            state.velocity*=max_speed;
-        }
-    }
-    
-    // Moves sprite right
-    if(state.turning == _TURN_RIGHT){
-        std::cout << state.cur_location << std::cout;
-        state.cur_location += .15 * vec2(1.0, 0.0);
-        if(length(state.velocity) > max_speed){
-            state.velocity = normalize(state.velocity);
-            state.velocity*=max_speed;
-        }
-    }
     
     
-    // TODO Add lots of platform vectors, or fix jump somehow. 
-    // "jump" movement
-    if(state.jump_on == true){
-        state.velocity += .15 * vec2(0.0, 1.0);
-    }
-    
-    // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-    if(state.velocity.y > .01){
-        state.velocity.y -=.05 ;
-    }
-    
-    if(state.velocity.y < .05 && state.velocity.y> 0.0){
-        state.velocity.y -=.15 ;
-    }
 
-    
+    // Maybe delete damping effect
     state.velocity*= damping_fact;
     state.cur_location+=state.velocity;
     
