@@ -1,4 +1,4 @@
-# Install script for directory: /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/glfw-3.3.7
+# Install script for directory: /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/glfw-3.3.7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,10 +37,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build")
+set(CMAKE_BINARY_DIR "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/src/cmake_install.cmake")
+  include("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/src/cmake_install.cmake")
 endif()
 

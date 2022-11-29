@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.cpp \
-  /Users/markbiju/Documents/GitHub/Graphics_final_project/Asteroids!_HD_copy/source/path/path.h
+  /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.cpp \
+  /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/source/path/path.h

@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-glfw in ASTEROIDS, no dependencies
-ZERO_CHECK in ASTEROIDS, no dependencies
-glad in ASTEROIDS, depends on:
-glfw in ASTEROIDS (explicit)
-ZERO_CHECK in ASTEROIDS (explicit)
