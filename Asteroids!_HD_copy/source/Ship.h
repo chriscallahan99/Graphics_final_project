@@ -52,7 +52,15 @@ class Ship{
   float damping_fact;
   float accel;
 
+  // Determine which platform mario is on
+  // Begin with Mario on starting platform
+  bool is_start_platform = true;
+  bool is_final_platform;
+  bool is_even_platform;
+
+
   enum{ _NO_TURN, _TURN_LEFT, _TURN_RIGHT};
+  
   
   //Ship State
   struct {
@@ -87,7 +95,7 @@ public:
   
   inline void start_jump(){ state.jump_on= true;}
   inline void is_jumping(){ state.jump_on= true;}
-  inline void stop_thruster() { state.jump_on= false;}
+  inline void stop_jump() { state.jump_on= false;}
   
   inline void rotateLeft() {
     state.turning = _TURN_LEFT;
