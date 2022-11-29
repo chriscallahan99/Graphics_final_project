@@ -17,7 +17,7 @@ Ship::Ship(){
   state.cur_location = vec2(0.0f,0.0f);
   state.pointing = vec4(0.0f,-1.0f,0.0f,0.0f);
   state.velocity = vec2(0.0f,0.0f);
-  state.thruster_on = false;
+  state.jump_on = false;
   state.turning = _NO_TURN;
   state.angle = 0.0;
   
@@ -215,7 +215,7 @@ Ship::Ship(){
 // Add slanted movement per stairs
 //
 void Ship::update_state(vec4 extents){
-  /*  if(state.thruster_on){
+  /*  if(state.jump_on){
         state.velocity += accel* vec2(state.pointing.x, state.pointing.y);
         if(length(state.velocity) > max_speed){
             state.velocity = normalize(state.velocity);
@@ -244,12 +244,23 @@ void Ship::update_state(vec4 extents){
             state.velocity*=max_speed;
         }
     }
+    
+    
     // TODO Add lots of platform vectors, or fix jump somehow. 
     // "jump" movement
-    if(state.thruster_on == true){
+    if(state.jump_on == true){
         state.velocity += .15 * vec2(0.0, 1.0);
-               
     }
+    
+    // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
+    if(state.velocity.y > .01){
+        state.velocity.y -=.05 ;
+    }
+    
+    if(state.velocity.y < .05 && state.velocity.y> 0.0){
+        state.velocity.y -=.15 ;
+    }
+
     
     state.velocity*= damping_fact;
     state.cur_location+=state.velocity;
@@ -407,32 +418,32 @@ void Ship::draw(mat4 Projection){
 
   glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, Projection*ModelView);
   
-  if(!state.thruster_on && state.turning == _NO_TURN){
+  if(!state.jump_on && state.turning == _NO_TURN){
     glBindTexture( GL_TEXTURE_2D, GLvars.ship_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 0, 4 );
   }
   
-  if(state.thruster_on && state.turning == _NO_TURN){
+  if(state.jump_on && state.turning == _NO_TURN){
     glBindTexture( GL_TEXTURE_2D, GLvars.ship_t_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 4, 4 );
   }
   
-  if(!state.thruster_on && state.turning == _TURN_LEFT){
+  if(!state.jump_on && state.turning == _TURN_LEFT){
     glBindTexture( GL_TEXTURE_2D, GLvars.left_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 8, 4 );
   }
   
-  if(!state.thruster_on && state.turning == _TURN_RIGHT){
+  if(!state.jump_on && state.turning == _TURN_RIGHT){
     glBindTexture( GL_TEXTURE_2D, GLvars.right_texture  );
     glDrawArrays( GL_TRIANGLE_STRIP, 8, 4 );
   }
   
-  if(state.thruster_on && state.turning == _TURN_LEFT){
+  if(state.jump_on && state.turning == _TURN_LEFT){
     glBindTexture( GL_TEXTURE_2D, GLvars.left_t_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 12, 4 );
   }
 
-  if(state.thruster_on && state.turning == _TURN_RIGHT){
+  if(state.jump_on && state.turning == _TURN_RIGHT){
     glBindTexture( GL_TEXTURE_2D, GLvars.right_t_texture  );
     glDrawArrays( GL_TRIANGLE_STRIP, 12, 4 );
   }

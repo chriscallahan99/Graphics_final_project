@@ -20,7 +20,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     game->ship->stopTurn();
   if (key == GLFW_KEY_SPACE){
     if(action == GLFW_PRESS){
-      game->ship->start_thruster();
+      game->ship->start_jump();
     }
     if(action == GLFW_RELEASE){
       game->ship->stop_thruster();
