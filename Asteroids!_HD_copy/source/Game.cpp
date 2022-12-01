@@ -4,7 +4,7 @@
 //
 //  Created by Brian Summa on 6/5/15.
 //
-//
+// Contains test interactions, and gameover / BG logic
 
 #include "Game.h"
 
@@ -78,8 +78,11 @@ Game::Game(){
   asteroids[0] = new Asteroid(1);
   asteroids[1] = new Asteroid(2);
   game_over = false;
+    
+  is_alive = true;
   
-  std::string file_location = source_path + "sprites/game_over.png";
+    
+  std::string file_location = source_path + "sprites/background_final.png";
   unsigned error = lodepng::decode(game_over_im, go_width, go_height, file_location.c_str());
   std::cout << go_width << " X " << go_height << " game image loaded\n";
   
@@ -174,6 +177,23 @@ void Game::gl_init(){
 }
 
 void Game::draw_game_over(mat4 proj){
+  
+  glUseProgram(GOGLvars.program);
+  glBindVertexArray( GOGLvars.vao );
+  glBindBuffer( GL_ARRAY_BUFFER, GOGLvars.buffer );
+  
+  glUniformMatrix4fv( GOGLvars.M_location, 1, GL_TRUE, proj);
+  
+  glBindTexture( GL_TEXTURE_2D, GOGLvars.texture  );
+  glDrawArrays( GL_TRIANGLE_STRIP, 0, 4 );
+  
+  glBindVertexArray(0);
+  glBindBuffer( GL_ARRAY_BUFFER, 0);
+
+  
+}
+
+void Game::draw_alive_bg(mat4 proj){
   
   glUseProgram(GOGLvars.program);
   glBindVertexArray( GOGLvars.vao );

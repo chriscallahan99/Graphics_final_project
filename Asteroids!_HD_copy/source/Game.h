@@ -42,6 +42,7 @@ public:
 private:
   
   bool game_over;
+  bool is_alive;
   
   std::vector<unsigned char> game_over_im;
   unsigned go_width, go_height;
@@ -75,7 +76,10 @@ public:
   }
   
   void draw(mat4 proj){
-    ship->draw(proj);
+      if(is_alive){
+          draw_alive_bg(proj);
+      }
+      ship->draw(proj);
     bullets.draw(proj);
     for(unsigned int i=0; i < asteroids.size(); i++){
       asteroids[i]->draw(proj);
@@ -100,6 +104,7 @@ private:
   
   void gl_init();
   void draw_game_over(mat4 proj);
+  void draw_alive_bg(mat4 proj);
   
   bool testIntersections();
   

@@ -70,6 +70,7 @@ class Ship{
     bool jump_on;
     uint8_t turning;
     float angle;
+    float platform_dist;
   } state;
   
   //OpenGL variables for a ship

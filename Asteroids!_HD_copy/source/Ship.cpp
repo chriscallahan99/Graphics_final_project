@@ -223,7 +223,6 @@ void Ship::update_state(vec4 extents){
     // since start platform is flat, movement logic works
     
     if(is_start_platform){
-        
         // Moves sprite left
         if(state.turning == _TURN_LEFT){
             std::cout << state.cur_location << std::cout;

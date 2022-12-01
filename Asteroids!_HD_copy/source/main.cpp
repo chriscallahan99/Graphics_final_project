@@ -96,8 +96,22 @@ int main(void)
 
   init();
   
-  while (!glfwWindowShouldClose(window)){
+    GLfloat lineVertices[] =
+     {
+         200, 100, 0,
+         100, 300, 0
+     };
     
+    
+    
+  while (!glfwWindowShouldClose(window)){
+      
+    
+
+      
+      
+      
+      
     int FB_width, FB_height;
     glfwGetFramebufferSize(window, &FB_width, &FB_height);
     glViewport(0, 0, FB_width, FB_height);
