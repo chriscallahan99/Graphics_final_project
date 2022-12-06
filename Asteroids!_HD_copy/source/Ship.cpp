@@ -62,7 +62,7 @@ Ship::Ship(){
   right_bbox[0] = ship_pos[12];
   right_bbox[1] = ship_pos[15];
 
-  std::string file_location = source_path + "sprites/ship.png";
+  std::string file_location = source_path + "sprites/mario_stationary_right.png";
   unsigned error = lodepng::decode(ship_im, ship_im_width, ship_im_height, file_location.c_str());
   std::cout << ship_im_width << " X " << ship_im_height << " image loaded\n";
   
@@ -107,11 +107,11 @@ Ship::Ship(){
     outline[i].y =  ship_bbox[0].y + outline[i].y*(ship_bbox[1].y-ship_bbox[0].y);
   }
   
-  file_location = source_path + "sprites/ship_thrust.png";
+  file_location = source_path + "sprites/mario_jumping_right.png";
   error = lodepng::decode(ship_t_im, ship_t_im_width, ship_t_im_height, file_location.c_str());
   std::cout << ship_t_im_width << " X " << ship_t_im_height << " image loaded\n";
 
-  file_location = source_path + "sprites/ship_right.png";
+  file_location = source_path + "sprites/mario_running_right.png";
   error = lodepng::decode(ship_left, s_left_width, s_left_height, file_location.c_str());
   std::cout << s_left_width << " X " << s_left_height << " image loaded\n";
   
@@ -155,7 +155,7 @@ Ship::Ship(){
     outline_left[i].y =  left_bbox[0].y + outline_left[i].y*(left_bbox[1].y-left_bbox[0].y);
   }
 
-  file_location = source_path + "sprites/ship_left.png";
+  file_location = source_path + "sprites/mario_running_left.png";
   error = lodepng::decode(ship_right, s_right_width, s_right_height, file_location.c_str());
   std::cout << s_right_width << " X " << s_right_height << " image loaded\n";
   
@@ -200,11 +200,11 @@ Ship::Ship(){
     outline_right[i].y =  right_bbox[0].y + outline_right[i].y*(right_bbox[1].y-right_bbox[0].y);
   }
 
-  file_location = source_path + "sprites/ship_right_thrust.png";
+  file_location = source_path + "sprites/mario_jumping_right.png";
   error = lodepng::decode(ship_left_t, s_left_t_width, s_left_t_height, file_location.c_str());
   std::cout << s_left_t_width << " X " << s_left_t_height << " image loaded\n";
 
-  file_location = source_path + "sprites/ship_left_thrust.png";
+  file_location = source_path + "sprites/mario_jumping_left.png";
   error = lodepng::decode(ship_right_t, s_right_t_width, s_right_t_height, file_location.c_str());
   std::cout << s_right_t_width << " X " << s_right_t_height << " image loaded\n";
 
