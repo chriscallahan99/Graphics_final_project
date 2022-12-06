@@ -18,6 +18,16 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     game->ship->rotateRight();
   if ( (key == GLFW_KEY_RIGHT || key == GLFW_KEY_LEFT)  && action == GLFW_RELEASE)
     game->ship->stopTurn();
+    
+ // climb up latter
+    if (key == GLFW_KEY_UP && (action == GLFW_PRESS || action == GLFW_REPEAT)){
+        game->ship->start_climb();
+    }
+    
+    if (key == GLFW_KEY_DOWN && (action == GLFW_PRESS || action == GLFW_REPEAT)){
+        game->ship->start_declimb();
+    }
+    
   if (key == GLFW_KEY_SPACE){
     if(action == GLFW_PRESS){
       game->ship->start_jump();
@@ -106,7 +116,21 @@ int main(void)
     
   while (!glfwWindowShouldClose(window)){
       
-    
+      glClear( GL_COLOR_BUFFER_BIT );
+      
+      // Render OpenGL here
+      glEnable( GL_LINE_SMOOTH );
+      glEnable( GL_LINE_STIPPLE );
+      glPushAttrib( GL_LINE_BIT );
+      glLineWidth( 10 );
+      glLineStipple( 1, 0x00FF );
+      glEnableClientState( GL_VERTEX_ARRAY );
+      glVertexPointer( 3, GL_FLOAT, 0, lineVertices );
+      glDrawArrays( GL_LINES, 0, 2 );
+      glDisableClientState( GL_VERTEX_ARRAY );
+      glPopAttrib( );
+      glDisable( GL_LINE_STIPPLE );
+      glDisable( GL_LINE_SMOOTH );
 
       
       

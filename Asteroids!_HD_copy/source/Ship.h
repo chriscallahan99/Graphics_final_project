@@ -57,9 +57,12 @@ class Ship{
   bool is_start_platform = true;
   bool is_final_platform;
   bool is_even_platform;
+  bool is_odd_platform;
 
 
   enum{ _NO_TURN, _TURN_LEFT, _TURN_RIGHT};
+    
+    enum{startClimb, stopClimb};
   
   
   //Ship State
@@ -68,6 +71,9 @@ class Ship{
     vec4 pointing;
     vec2 velocity;
     bool jump_on;
+    bool in_ladder_range;
+    bool is_climbing;
+      
     uint8_t turning;
     float angle;
     float platform_dist;
@@ -97,6 +103,24 @@ public:
   inline void start_jump(){ state.jump_on= true;}
   inline void is_jumping(){ state.jump_on= true;}
   inline void stop_jump() { state.jump_on= false;}
+    
+  inline void start_climb(){
+      if(state.in_ladder_range == true){
+          state.is_climbing= true;
+          state.cur_location.y += .05;
+      }
+  }
+    
+    inline void start_declimb(){
+        if(state.in_ladder_range == true){
+            state.cur_location.y -= .05;
+        }
+    }
+    
+  inline void stop_climb() { state.is_climbing = false;}
+    
+  inline void in_ladder_range() { state.in_ladder_range= true;}
+  inline void out_ladder_range() { state.in_ladder_range= false;}
   
   inline void rotateLeft() {
     state.turning = _TURN_LEFT;
