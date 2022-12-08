@@ -13,7 +13,6 @@
 #define _ACC 0.008f
 
 Ship::Ship(){
-  
   state.cur_location = vec2(0.0f,0.0f);
   state.pointing = vec4(0.0f,-1.0f,0.0f,0.0f);
   state.velocity = vec2(0.0f,0.0f);
@@ -223,8 +222,13 @@ void Ship::update_state(vec4 extents){
     // since start platform is flat, movement logic works (number 0 platform
     
     if(is_start_platform){
+        if(is_start){
+            state.cur_location = vec2(-1.0, -.85);
+            is_start = false;
+            
+        }
         // if platform is greater than -.63, mario must be on platform 1. Also use for Final platform?
-        if(state.cur_location.y > -.63){
+        if(state.cur_location.y > 5.0){
             is_start_platform = false;
             is_odd_platform = true;
         }

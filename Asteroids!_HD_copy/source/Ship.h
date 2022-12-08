@@ -51,6 +51,7 @@ class Ship{
   float max_speed;
   float damping_fact;
   float accel;
+    bool is_start = true;
 
   // Determine which platform mario is on
   // Begin with Mario on starting platform
