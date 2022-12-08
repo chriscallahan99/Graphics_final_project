@@ -225,10 +225,9 @@ void Ship::update_state(vec4 extents){
         if(is_start){
             state.cur_location = vec2(-1.0, -.85);
             is_start = false;
-            
         }
-        // if platform is greater than -.63, mario must be on platform 1. Also use for Final platform?
-        if(state.cur_location.y > 5.0){
+        // if platform is greater than -.62, mario must be on platform 1. Also use for Final platform?
+        if(state.cur_location.y > -.68){
             is_start_platform = false;
             is_odd_platform = true;
         }
@@ -236,7 +235,7 @@ void Ship::update_state(vec4 extents){
         // Moves sprite left
         if(state.turning == _TURN_LEFT){
             std::cout << state.cur_location << std::cout;
-            state.velocity -= .15 * vec2(1.0, 0.0);
+            state.velocity.x -= .15;
             if(length(state.velocity) > max_speed){
                 state.velocity = normalize(state.velocity);
                 state.velocity*=max_speed;
@@ -281,13 +280,22 @@ void Ship::update_state(vec4 extents){
     // movement logic for odd platforms
     // platform 1, 3
     if(is_odd_platform){
+        if(state.cur_location.y < -.68){
+            is_start_platform = true;
+            is_odd_platform = false;
+        }
+        if(state.cur_location.y > -.4){
+            is_odd_platform = false;
+            is_even_platform = true;
+        }
+
         // Moves sprite left
         if(state.turning == _TURN_LEFT){
             std::cout << state.cur_location << std::cout;
             state.velocity -= .15 * vec2(1.0, 0.0);
             
             // diagonal upwards movement
-            state.velocity += .05 * vec2(0.0, 1.0);
+            state.velocity.y += .007;
             if(length(state.velocity) > max_speed){
                 state.velocity = normalize(state.velocity);
                 state.velocity*=max_speed;
@@ -297,26 +305,25 @@ void Ship::update_state(vec4 extents){
         // Moves sprite right
         if(state.turning == _TURN_RIGHT){
             std::cout << state.cur_location << std::cout;
-            state.velocity -= .15 * vec2(1.0, 0.0);
+            state.velocity += .15 * vec2(1.0, 0.0);
             // diagonal downward movement
             
-            state.velocity -= .05 * vec2(0.0, 1.0);
+            state.velocity -= .007 * vec2(0.0, 1.0);
             
             if(length(state.velocity) > max_speed){
                 state.velocity = normalize(state.velocity);
                 state.velocity*=max_speed;
             }
         }
-        // first ladder
-        if(state.cur_location.x > .75 && state.cur_location.x < .95 &&   state.cur_location.y > -.92 && state.cur_location.y < -.62){
+        
+        // second + third ladders
+        if((state.cur_location.x > -1.0 && state.cur_location.x < -.85) || (state.cur_location.x > -.3 && state.cur_location.x < -.1))
+        {
             state.in_ladder_range = true;
         }
         else{
             state.in_ladder_range = false;
         }
-        
-        // TODO Add lots of platform vectors, or fix jump somehow.
-        // "jump" movement
         
         // Make it so all other movement is locked. (no turning, no changing directions)
         if(state.jump_on == true){
@@ -324,15 +331,78 @@ void Ship::update_state(vec4 extents){
         }
         
         // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-        if(state.velocity.y > .01){
+        /*if(state.velocity.y > .01){
             state.velocity.y -=.03 ;
         }
         
         if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
             state.velocity.y -=.2;
         }
+         */
     }
-    
+    // even platform logic
+    if(is_even_platform){
+        // TODO
+        if(state.cur_location.y < -.4){
+            is_even_platform = false;
+            is_odd_platform = true;
+        }
+        if(state.cur_location.y > -.4){
+            is_odd_platform = false;
+            is_even_platform = true;
+        }
+
+        // Moves sprite left
+        if(state.turning == _TURN_LEFT){
+            std::cout << state.cur_location << std::cout;
+            state.velocity -= .15 * vec2(1.0, 0.0);
+            
+            // diagonal upwards movement
+            state.velocity.y -= .007;
+            if(length(state.velocity) > max_speed){
+                state.velocity = normalize(state.velocity);
+                state.velocity*=max_speed;
+            }
+        }
+        
+        // Moves sprite right
+        if(state.turning == _TURN_RIGHT){
+            std::cout << state.cur_location << std::cout;
+            state.velocity += .15 * vec2(1.0, 0.0);
+            // diagonal downward movement
+            
+            state.velocity += .007 * vec2(0.0, 1.0);
+            
+            if(length(state.velocity) > max_speed){
+                state.velocity = normalize(state.velocity);
+                state.velocity*=max_speed;
+            }
+        }
+        // TODO
+        //  fourth + fifth ladders
+        if((state.cur_location.x > -1.0 && state.cur_location.x < -.85) || (state.cur_location.x > -.3 && state.cur_location.x < -.1))
+        {
+            state.in_ladder_range = true;
+        }
+        else{
+            state.in_ladder_range = false;
+        }
+        
+        // Make it so all other movement is locked. (no turning, no changing directions)
+        if(state.jump_on == true){
+            state.velocity += .15 * vec2(0.0, 1.0);
+        }
+        
+        // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
+        /*if(state.velocity.y > .01){
+            state.velocity.y -=.03 ;
+        }
+        
+        if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
+            state.velocity.y -=.2;
+        }
+         */
+    }
 
     // Maybe delete damping effect
     state.velocity*= damping_fact;
