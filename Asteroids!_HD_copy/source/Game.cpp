@@ -82,7 +82,7 @@ Game::Game(){
   is_alive = true;
   
     
-  std::string file_location = source_path + "sprites/background_final.png";
+    std::string file_location = source_path + "sprites/bg_dk.png";
   unsigned error = lodepng::decode(game_over_im, go_width, go_height, file_location.c_str());
   std::cout << go_width << " X " << go_height << " game image loaded\n";
   
