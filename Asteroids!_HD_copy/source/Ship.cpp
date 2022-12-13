@@ -220,6 +220,7 @@ void Ship::update_state(vec4 extents){
     // Mario's movement on first platform
     // since start platform is flat, movement logic works (number 0 platform
     which_platform();
+    send_to_platform();
     
     if(is_start){
         state.cur_location = vec2(-1.0, -.85);
@@ -406,8 +407,8 @@ void Ship::update_state(vec4 extents){
         }
         // TODO
         //  final 3 ladders
-        if((state.cur_location.x > .05 && state.cur_location.x < 0.3) ||
-           (state.cur_location.x > .05 && state.cur_location.x < 0.3) ||
+        if((state.cur_location.x > .05 && state.cur_location.x < 0.2) ||
+           (state.cur_location.x > -.32 && state.cur_location.x < -.15) ||
            (state.cur_location.x > -.68 && state.cur_location.x < -.38))
         {
             state.in_ladder_range = true;
