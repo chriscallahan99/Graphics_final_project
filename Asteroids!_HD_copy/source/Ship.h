@@ -51,6 +51,7 @@ class Ship{
     float max_speed;
     float damping_fact;
     float accel;
+    float grav;
     bool is_start = true;
     
     // Determine which platform mario is on
@@ -71,6 +72,7 @@ class Ship{
         vec2 cur_location;
         vec4 pointing;
         vec2 velocity;
+        bool init_jump;
         bool jump_on;
         bool in_ladder_range;
         bool is_climbing;
@@ -102,7 +104,7 @@ public:
     
     Ship();
     
-    inline void start_jump(){ state.jump_on= true;}
+    inline void start_jump(){ state.init_jump= true;}
     inline void is_jumping(){ state.jump_on= true;}
     inline void stop_jump() { state.jump_on= false;}
     
