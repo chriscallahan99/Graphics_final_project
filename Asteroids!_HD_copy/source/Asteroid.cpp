@@ -21,8 +21,10 @@ vec2 randvec(float min, float max){
 
 Asteroid::Asteroid(unsigned int index){
 
+    
+    state.angle = 0.0;
     bool release_barrel = false;
-
+    
     if(index == 1){
         state.num_asteroid = 1;
         state.cur_location = state.start_pos;
@@ -72,6 +74,9 @@ Asteroid::Asteroid(unsigned int index){
 
 void Asteroid::update_state(vec4 extents){
 
+    float roll_speed = 0.01;
+    float scalar = 0.003 / 0.055;
+    
    which_platform();
    send_to_platform();
   state.cur_location += state.velocity;
@@ -91,20 +96,20 @@ void Asteroid::update_state(vec4 extents){
 
 
     if(state.platform_num == 777){
-        state.velocity = vec2(.055, 0);
+        state.velocity = vec2(roll_speed, 0);
     }
     if(state.platform_num == 4){
-        state.velocity = vec2(-.055, -.003);
+        state.velocity = vec2(-roll_speed, -(roll_speed * scalar));
     }
     if(state.platform_num == 3){
-        state.velocity = vec2(.055, -.003);
+        state.velocity = vec2(roll_speed, -(roll_speed * scalar));
     }
 
     if(state.platform_num == 2){
-        state.velocity = vec2(-.055, -.003);
+        state.velocity = vec2(-roll_speed, -(roll_speed * scalar));
     }
     if(state.platform_num == 1){
-        state.velocity = vec2(.055, -.003);
+        state.velocity = vec2(roll_speed, -(roll_speed * scalar));
     }
     if(state.platform_num == 0){
         state.velocity.x -= .002;
@@ -117,17 +122,17 @@ void Asteroid::update_state(vec4 extents){
 
     // platform velocities
     if(state.platform_num == 777){
-        state.velocity = vec2(.055, 0);
+        state.velocity = vec2(roll_speed, 0);
     }
     if(state.platform_num == 2 ||state.platform_num == 4){
-        state.velocity = vec2(-.055, -.003);
+        state.velocity = vec2(-roll_speed, -(roll_speed * scalar));
     }
     if(state.platform_num == 1 || state.platform_num == 3){
-        state.velocity = vec2(.055, -.003);
+        state.velocity = vec2(roll_speed, -(roll_speed * scalar));
     }
 
     if(state.platform_num == 0){
-        state.velocity = vec2(-.055, 0);
+        state.velocity = vec2(-roll_speed, 0);
     }
 
     if(state.cur_location.x < -.9 && state.cur_location.y < -.85){

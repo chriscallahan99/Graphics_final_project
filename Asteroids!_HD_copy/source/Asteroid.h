@@ -26,7 +26,7 @@ class Asteroid{
   unsigned im_width, im_height;
 
 
-  float angle_increment;
+  float angle_increment = - M_PI / 32;
 
   //Asteroid State
   struct {

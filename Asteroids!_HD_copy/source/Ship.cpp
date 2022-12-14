@@ -20,7 +20,7 @@ Ship::Ship(){
   state.turning = _NO_TURN;
   state.angle = 0.0;
 
-  max_speed = 0.05;
+  max_speed = 0.025;
   damping_fact = 0.7;
   accel = 0.008;
     grav = 0.002;
