@@ -23,7 +23,7 @@ Ship::Ship(){
   max_speed = 0.05;
   damping_fact = 0.7;
   accel = 0.008;
-    grav = 0.005;
+    grav = 0.0002;
   
   ship_pos.resize(16);
   ship_uv.resize(16);
@@ -227,15 +227,26 @@ void Ship::update_state(vec4 extents){
         ramp_pts[i] = extents[0] + (i * ramp_unit);
     }
     
-     float y_end;
+     float x_end;
      int parity;
     float bound = 0.01;
     
     if (state.jump_on) {
-        state.cur_location += state.velocity;
+        
         state.velocity.y -= grav;
-        if ((state.velocity.y < 0) && (state.cur_location.y >= (y_end - bound)) && (state.cur_location.y <= (y_end + bound)))  {
-            stop_jump();
+        state.cur_location += state.velocity;
+        if (state.velocity.y < 0) {
+            if (parity > 0) {
+                if (state.cur_location.x >= x_end) {
+                    stop_jump();
+                }
+                else {
+                    if (state.cur_location.x <= x_end) {
+                        stop_jump();
+                    }
+                }
+            }
+            
         }
     }
     else if (state.init_jump) {
@@ -247,9 +258,9 @@ void Ship::update_state(vec4 extents){
         }
         
         if (is_start_platform){
-            y_end = state.cur_location.y;
+            x_end = state.cur_location.x + (parity * 0.6);
         }
-        state.velocity = 0.05 * normalize(vec2(parity * 1.0, 1.0));
+        state.velocity = vec2((parity * max_speed), max_speed);
         state.jump_on = true;
         state.init_jump = false;
     }
@@ -475,11 +486,17 @@ void Ship::update_state(vec4 extents){
         
     }
     
-    if(state.cur_location.x <= extents[0] || state.cur_location.x > extents[1]){
-        state.cur_location.x = -state.cur_location.x;
+    if(state.cur_location.x <= extents[0]){
+        state.cur_location.x = extents[0];
+        state.velocity.x = 0.0;
+        
     }
-    if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
-        state.cur_location.y = -state.cur_location.y;
+    if(state.cur_location.x >= extents[1]){
+        state.cur_location.x = extents[1];
+        state.velocity.x = 0.0;
+    }
+    if(state.cur_location.y <= -.85 ||state.cur_location.y >= extents[3]){
+        state.velocity.y = 0.0;
     }
     
     if (state.turning == _TURN_LEFT) {
