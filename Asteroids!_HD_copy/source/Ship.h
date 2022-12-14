@@ -115,6 +115,7 @@ public:
     inline void jump_interpolate(vec4 extents, bool is_left_edge);
     
     inline void which_platform(){
+        
         if(state.cur_location.y < -.67){
             state.platform_num = 0;
         }
@@ -137,25 +138,32 @@ public:
         }
     }
     
+    // made to make mario fall if he is off the ledge.
     inline void send_to_platform(){
-        if(( state.platform_num == 0 || state.platform_num == 777) && state.jump_on == false && state.is_climbing == false){
-            if(state.platform_num == 0){
-                state.cur_location.y = -.85;
-            }
-            if(state.platform_num == 777){
-                state.cur_location.y = .4;
-            }
+        
+        if(state.platform_num == 1 && state.cur_location.x > 1.16){
+            state.cur_location.y = -.85;
+            
         }
         
-        if(( state.platform_num == 1 || state.platform_num == 3) && state.jump_on == false && state.is_climbing == false){
-            if(state.platform_num == 1){
-                //state.cur_location.y = -.85;
-            }
-            if(state.platform_num == 3){
-                //state.cur_location.y = .4;
-            }
+        if(state.platform_num == 2 && state.cur_location.x < -1.18){
+            state.cur_location.y = -.53;
+            
+        }
+        if(state.platform_num == 3 && state.cur_location.x > 1.18){
+            state.cur_location.y = -.3;
+        }
+        if(state.platform_num == 4 && state.cur_location.x < -1.18){
+            state.cur_location.y = -.05;
+            
         }
         
+        if(state.platform_num == 777 && state.cur_location.x > 1.06){
+            state.cur_location.y = .2;
+        }
+        
+        
+    
     }
     
     
@@ -193,7 +201,7 @@ public:
           state.cur_location.y += .05;
       }
       else{
-          state.is_climbing = false;
+          stop_climb();
       }
   }
     
@@ -203,7 +211,7 @@ public:
             state.cur_location.y -= .05;
         }
         else{
-            state.is_climbing = false;
+            stop_climb();
         }
     }
     
