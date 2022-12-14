@@ -23,33 +23,28 @@ Asteroid::Asteroid(unsigned int index){
     
     bool release_barrel = false;
     
+    
+    
     if(index == 1){
         state.num_asteroid = 1;
         state.cur_location = state.start_pos;
+        
+        if(state.cur_location.y < -.1)
+            release_barrel = true;
     }
     
     if(index == 2){
         state.num_asteroid = 2;
-        state.cur_location = state.start_pos;
+        state.cur_location = vec2(-.1,-.35);
     }
     
 
-    
-
-    
-    
-    
-    
-  //state.velocity = randvec(-1.0, 1.0);
-  //state.velocity = normalize(state.velocity)*_ACC;
-  //state.angle = 0.0;
-
   angle_increment = (rand() > RAND_MAX/2)? M_PI/32 : -M_PI/32 ;
 
-  Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
-  Asteroid_vert.push_back(vec2(-0.05,  0.05)); Asteroid_uv.push_back(vec2(0.0,1.0));
-  Asteroid_vert.push_back(vec2(0.05,  -0.05)); Asteroid_uv.push_back(vec2(1.0,0.0));
-  Asteroid_vert.push_back(vec2(0.05,   0.05)); Asteroid_uv.push_back(vec2(1.0,1.0));
+  Asteroid_vert.push_back(vec2(-0.15, -0.15)); Asteroid_uv.push_back(vec2(0.0,0.0));
+  Asteroid_vert.push_back(vec2(-0.15,  0.15)); Asteroid_uv.push_back(vec2(0.0,1.0));
+  Asteroid_vert.push_back(vec2(0.15,  -0.15)); Asteroid_uv.push_back(vec2(1.0,0.0));
+  Asteroid_vert.push_back(vec2(0.15,   0.15)); Asteroid_uv.push_back(vec2(1.0,1.0));
 
   asteroid_bbox[0] = vec2(state.cur_location.x - 0.15, state.cur_location.y - 0.15);
   asteroid_bbox[1] = vec2(state.cur_location.x + 0.15, state.cur_location.y - 0.15);
@@ -75,43 +70,25 @@ void Asteroid::update_state(vec4 extents){
     
    which_platform();
    send_to_platform();
-    
-    bool release_barrell = false;
 
   state.cur_location += state.velocity;
   state.angle += angle_increment;
     
-    if(state.cur_location.y < -.2){
-        state.is_start = false;
-    }
     
     
-    if(state.num_asteroid == 2 && state.is_start == true){
-        state.cur_location = state.start_pos;
-        
-    }
-    
-
-    
-    
+    // platform velocities
     if(state.platform_num == 777){
         state.velocity = vec2(.055, 0);
     }
-    if(state.platform_num == 4){
+    if(state.platform_num == 2 ||state.platform_num == 4){
         state.velocity = vec2(-.055, -.003);
     }
-    if(state.platform_num == 3){
+    if(state.platform_num == 1 || state.platform_num == 3){
         state.velocity = vec2(.055, -.003);
     }
-    
-    if(state.platform_num == 2){
-        state.velocity = vec2(-.055, -.003);
-    }
-    if(state.platform_num == 1){
-        state.velocity = vec2(.055, -.003);
-    }
+
     if(state.platform_num == 0){
-        state.velocity.x -= .002;
+        state.velocity = vec2(-.055, 0);
     }
     
     if(state.cur_location.x < -.9 && state.cur_location.y < -.85){

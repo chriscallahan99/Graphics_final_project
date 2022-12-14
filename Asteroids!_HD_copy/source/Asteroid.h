@@ -56,6 +56,15 @@ public:
 
   Asteroid(unsigned int index);
     
+    
+    inline void release_barrell(){
+        if(state.platform_num == 2){
+            state.is_start = false;
+        }
+    }
+
+            
+    
     inline void which_platform(){
         if(state.cur_location.y < -.74){
             state.platform_num = 0;

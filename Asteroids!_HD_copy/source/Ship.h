@@ -143,7 +143,6 @@ public:
         
         if(state.platform_num == 1 && state.cur_location.x > 1.16){
             state.cur_location.y = -.85;
-            
         }
         
         if(state.platform_num == 2 && state.cur_location.x < -1.18){
