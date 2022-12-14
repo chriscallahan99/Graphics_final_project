@@ -21,13 +21,13 @@ vec2 randvec(float min, float max){
 
 Asteroid::Asteroid(unsigned int index){
 
-    
+
     state.angle = 0.0;
     bool release_barrel = false;
-    
+
     if(index == 1){
         state.num_asteroid = 1;
-        state.cur_location = state.start_pos;
+        state.cur_location = vec2(0, -.35);
     }
 
     if(index == 2){
@@ -37,23 +37,13 @@ Asteroid::Asteroid(unsigned int index){
 
 
 
-
-
-
-
-
-  //state.velocity = randvec(-1.0, 1.0);
-  //state.velocity = normalize(state.velocity)*_ACC;
-  //state.angle = 0.0;
-
-
     Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
     Asteroid_vert.push_back(vec2(-0.05,  0.05)); Asteroid_uv.push_back(vec2(0.0,1.0));
     Asteroid_vert.push_back(vec2(0.05,  -0.05)); Asteroid_uv.push_back(vec2(1.0,0.0));
     Asteroid_vert.push_back(vec2(0.05,   0.05)); Asteroid_uv.push_back(vec2(1.0,1.0));
 
-  asteroid_bbox[0] = vec2(state.cur_location.x - 0.05, state.cur_location.y - 0.05);
-  asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
+  asteroid_bbox[0] = vec2(state.cur_location.x - 0.3, state.cur_location.y - 0.3);
+  asteroid_bbox[1] = vec2(state.cur_location.x + 0.3, state.cur_location.y + 0.3);
 
   if(index == 1){
     std::string file_location = source_path + "sprites/barrell.png";
@@ -76,15 +66,13 @@ void Asteroid::update_state(vec4 extents){
 
     float roll_speed = 0.01;
     float scalar = 0.003 / 0.055;
-    
+
    which_platform();
    send_to_platform();
+
   state.cur_location += state.velocity;
   state.angle += angle_increment;
 
-    if(state.cur_location.y < -.2){
-        state.is_start = false;
-    }
 
 
     if(state.num_asteroid == 2 && state.is_start == true){
@@ -151,8 +139,8 @@ void Asteroid::update_state(vec4 extents){
   }
 
 
-    asteroid_bbox[0] = vec2(state.cur_location.x - 0.05, state.cur_location.y - 0.05);
-    asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
+    asteroid_bbox[0] = vec2(state.cur_location.x - 0.08, state.cur_location.y - 0.08);
+    asteroid_bbox[1] = vec2(state.cur_location.x + 0.08, state.cur_location.y + 0.08);
 
 }
 

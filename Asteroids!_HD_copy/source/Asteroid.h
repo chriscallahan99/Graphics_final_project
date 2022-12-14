@@ -56,15 +56,6 @@ public:
 
   Asteroid(unsigned int index);
 
-
-    inline void release_barrell(){
-        if(state.platform_num == 2){
-            state.is_start = false;
-        }
-    }
-
-
-    
     inline void which_platform(){
         if(state.cur_location.y < -.74){
             state.platform_num = 0;
@@ -92,28 +83,24 @@ public:
     inline void send_to_platform(){
 
         if(state.platform_num == 1 && state.cur_location.x > 1.16){
-            state.cur_location.y = -.98;
-
+            state.cur_location.y = -.92;
         }
 
         if(state.platform_num == 2 && state.cur_location.x < -1.18){
             state.cur_location.y = -.58;
-
         }
+        
         if(state.platform_num == 3 && state.cur_location.x > 1.18){
             state.cur_location.y = -.31;
         }
+        
         if(state.platform_num == 4 && state.cur_location.x < -1.18){
             state.cur_location.y = -.05;
-
         }
 
         if(state.platform_num == 777 && state.cur_location.x > 1.06){
             state.cur_location.y = .2;
         }
-
-
-
     }
 
   void update_state(vec4 extents);

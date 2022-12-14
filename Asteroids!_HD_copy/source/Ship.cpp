@@ -510,8 +510,11 @@ void Ship::update_state(vec4 extents){
     }
 
     if (state.turning == _TURN_LEFT) {
-        left_bbox[0] = vec2(state.cur_location.x - 0.057692, state.cur_location.y - 0.075);
-        left_bbox[1] = vec2(state.cur_location.x + 0.057692, state.cur_location.y + 0.075);
+        float numb = .2;
+        float old_numb = 0.057692;
+        
+        left_bbox[0] = vec2(state.cur_location.x - numb, state.cur_location.y - numb);
+        left_bbox[1] = vec2(state.cur_location.x + numb, state.cur_location.y + numb);
     }
     else if (state.turning == _TURN_RIGHT) {
         right_bbox[0] = vec2(state.cur_location.x - 0.057692, state.cur_location.y - 0.075);
