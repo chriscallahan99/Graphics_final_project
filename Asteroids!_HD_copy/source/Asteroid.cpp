@@ -20,27 +20,26 @@ vec2 randvec(float min, float max){
 }
 
 Asteroid::Asteroid(unsigned int index){
-  state.cur_location = randvec(-1.0, 1.0);
-  state.velocity = randvec(-1.0, 1.0);
-  state.velocity = normalize(state.velocity)*_ACC;
+    state.cur_location = vec2(-0.60, 0.40);
+    state.velocity = vec2(0.02, 0.0);
   state.angle = 0.0;
   
-  angle_increment = (rand() > RAND_MAX/2)? M_PI/32 : -M_PI/32 ;
+  angle_increment = M_PI / 32;
   
-  Asteroid_vert.push_back(vec2(-0.15, -0.15)); Asteroid_uv.push_back(vec2(0.0,0.0));
-  Asteroid_vert.push_back(vec2(-0.15,  0.15)); Asteroid_uv.push_back(vec2(0.0,1.0));
-  Asteroid_vert.push_back(vec2(0.15,  -0.15)); Asteroid_uv.push_back(vec2(1.0,0.0));
-  Asteroid_vert.push_back(vec2(0.15,   0.15)); Asteroid_uv.push_back(vec2(1.0,1.0));
+  Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
+  Asteroid_vert.push_back(vec2(-0.05,  0.05)); Asteroid_uv.push_back(vec2(0.0,1.0));
+  Asteroid_vert.push_back(vec2(0.05,  -0.05)); Asteroid_uv.push_back(vec2(1.0,0.0));
+  Asteroid_vert.push_back(vec2(0.05,   0.05)); Asteroid_uv.push_back(vec2(1.0,1.0));
   
-  asteroid_bbox[0] = vec2(state.cur_location.x - 0.15, state.cur_location.y - 0.15);
-  asteroid_bbox[1] = vec2(state.cur_location.x + 0.15, state.cur_location.y - 0.15);
+  asteroid_bbox[0] = vec2(state.cur_location.x - 0.05, state.cur_location.y - 0.05);
+  asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
   
   if(index == 1){
-    std::string file_location = source_path + "sprites/asteroid_1.png";
+    std::string file_location = source_path + "sprites/barrel.png";
     unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
   }
   if(index == 2){
-    std::string file_location = source_path + "sprites/asteroid_2.png";
+    std::string file_location = source_path + "sprites/barrel.png";
     unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
   }
   std::cout << im_width << " X " << im_height << " image loaded\n";
@@ -52,15 +51,34 @@ Asteroid::Asteroid(unsigned int index){
 
 void Asteroid::update_state(vec4 extents){
 
+    
+    float ramp_pts[14] = {};
+    float ramp_unit = (extents[1] - extents[0]) / 14;
+    float min_bound;
+    float max_bound;
+    
+    for (int i = 0; i < 14; i++) {
+        ramp_pts[i] = extents[0] + (i * ramp_unit);
+    }
+    
   state.cur_location+=state.velocity;
   state.angle += angle_increment;
+    
+    for (int i = 0; i < 14; i++) {
+        min_bound = ramp_pts[i] - (ramp_unit / 8);
+        max_bound = ramp_pts[i] + (ramp_unit / 8);
+        if ((state.cur_location.x >= min_bound) && (state.cur_location.x <= max_bound)) {
+            state.cur_location.y -= (ramp_unit / 17);
+        }
+    }
 
-  if(state.cur_location.x < extents[0] || state.cur_location.x > extents[1]){
-    state.cur_location.x = -state.cur_location.x;
+  if(state.cur_location.x <= extents[0] || state.cur_location.x >= extents[1]){
+      state.velocity.x = -state.velocity.x;
+      angle_increment = -angle_increment;
   }
-  if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
-    state.cur_location.y = -state.cur_location.y;
-  }
+    if(state.cur_location.y <= -.85) {
+        state.cur_location.y = -.85;
+    }
 
     
     asteroid_bbox[0] = vec2(state.cur_location.x - 0.15, state.cur_location.y - 0.15);

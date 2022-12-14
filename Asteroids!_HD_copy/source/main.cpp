@@ -32,9 +32,6 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     if(action == GLFW_PRESS){
       game->ship->start_jump();
     }
-    if(action == GLFW_RELEASE){
-      game->ship->stop_jump();
-    }
   }
   if (key == GLFW_KEY_Z && action == GLFW_PRESS){
     game->bullets.add(game->ship->pew_pew());
