@@ -23,7 +23,7 @@ Ship::Ship(){
   max_speed = 0.05;
   damping_fact = 0.7;
   accel = 0.008;
-    grav = 0.005;
+    grav = 0.0002;
 
   ship_pos.resize(16);
   ship_uv.resize(16);
@@ -222,7 +222,7 @@ void Ship::update_state(vec4 extents){
     // since start platform is flat, movement logic works (number 0 platform
     which_platform();
     send_to_platform();
-    
+
     float ramp_pts[14] = {};
     float ramp_unit = (extents[1] - extents[0]) / 14;
     float min_bound;
@@ -232,15 +232,26 @@ void Ship::update_state(vec4 extents){
         ramp_pts[i] = extents[0] + (i * ramp_unit);
     }
 
-     float y_end;
+     float x_end;
      int parity;
     float bound = 0.001;
 
     if (state.jump_on) {
-        state.cur_location += state.velocity;
+
         state.velocity.y -= grav;
-        if ((state.velocity.y < 0) && ((state.cur_location.y >= (y_end - bound)) || (state.cur_location.y <= (y_end + bound))))  {
-            stop_jump();
+        state.cur_location += state.velocity;
+        if (state.velocity.y < 0) {
+            if (parity > 0) {
+                if (state.cur_location.x >= x_end) {
+                    stop_jump();
+                }
+                else {
+                    if (state.cur_location.x <= x_end) {
+                        stop_jump();
+                    }
+                }
+            }
+
         }
     }
     else if (state.init_jump) {
@@ -252,9 +263,9 @@ void Ship::update_state(vec4 extents){
         }
 
         if (is_start_platform){
-            y_end = state.cur_location.y;
+            x_end = state.cur_location.x + (parity * 0.6);
         }
-        state.velocity = 0.03 * normalize(vec2(parity * 1.0, 1.0));
+        state.velocity = vec2((parity * max_speed), max_speed);
         state.jump_on = true;
         state.init_jump = false;
     }
@@ -426,10 +437,10 @@ void Ship::update_state(vec4 extents){
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
-                
+
             }
-        
-            
+
+
 
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             /*if(state.velocity.y > .01){
@@ -448,11 +459,17 @@ void Ship::update_state(vec4 extents){
 
     }
 
-    if(state.cur_location.x <= extents[0] || state.cur_location.x > extents[1]){
-        state.cur_location.x = -state.cur_location.x;
+    if(state.cur_location.x <= extents[0]){
+        state.cur_location.x = extents[0];
+        state.velocity.x = 0.0;
+
     }
-    if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
-        state.cur_location.y = -state.cur_location.y;
+    if(state.cur_location.x >= extents[1]){
+        state.cur_location.x = extents[1];
+        state.velocity.x = 0.0;
+    }
+    if(state.cur_location.y <= -.85 ||state.cur_location.y >= extents[3]){
+        state.velocity.y = 0.0;
     }
 
     if (state.turning == _TURN_LEFT) {
