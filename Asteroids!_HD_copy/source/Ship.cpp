@@ -19,25 +19,25 @@ Ship::Ship(){
   state.jump_on = false;
   state.turning = _NO_TURN;
   state.angle = 0.0;
-  
+
   max_speed = 0.05;
   damping_fact = 0.7;
   accel = 0.008;
     grav = 0.0002;
-  
+
   ship_pos.resize(16);
   ship_uv.resize(16);
-    
+
   //Ship
   ship_pos[0] = vec2(-0.075, -0.075);     ship_uv[0] = vec2(0.0,0.0);
   ship_pos[1] = vec2(-0.075,  0.075);     ship_uv[1] = vec2(0.0,1.0);
   ship_pos[2] = vec2(0.075,  -0.075);     ship_uv[2] = vec2(1.0,0.0);
   ship_pos[3] = vec2(0.075,   0.075);     ship_uv[3] = vec2(1.0,1.0);
-  
+
   //Min and max coordinates
   ship_bbox[0] = ship_pos[0];
   ship_bbox[1] = ship_pos[3];
-  
+
   //Ship with thruster (because the image gets bigger 39px -> 43px)
   ship_pos[4] = vec2(-0.075, -0.075);     ship_uv[4] = vec2(0.0,0.0);
   ship_pos[5] = vec2(-0.075,  0.0903846);     ship_uv[5] = vec2(0.0,1.0);
@@ -49,7 +49,7 @@ Ship::Ship(){
   ship_pos[9] = vec2(-0.057692,  0.075);     ship_uv[9] = vec2(0.0,1.0);
   ship_pos[10] = vec2(0.057692,  -0.075);     ship_uv[10] = vec2(1.0,0.0);
   ship_pos[11] = vec2(0.057692,   0.075);     ship_uv[11] = vec2(1.0,1.0);
-  
+
   left_bbox[0] = ship_pos[8];
   left_bbox[1] = ship_pos[11];
 
@@ -65,11 +65,11 @@ Ship::Ship(){
   std::string file_location = source_path + "sprites/mario_stationary_right.png";
   unsigned error = lodepng::decode(ship_im, ship_im_width, ship_im_height, file_location.c_str());
   std::cout << ship_im_width << " X " << ship_im_height << " image loaded\n";
-  
+
   for(unsigned int i=0; i < ship_im_width*ship_im_height; i++){
     unsigned int x = i%ship_im_width;
     unsigned int y = i/ship_im_width;
-    
+
     bool neighbor_alpha = false;
     if(ship_im[4*i+3] != 0){
       if(x > 0){
@@ -77,36 +77,36 @@ Ship::Ship(){
           neighbor_alpha = true;
         }
       }
-      
+
       if(x < ship_im_width-1){
         if(ship_im[4*(i+1)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y > 0){
         if(ship_im[4*(i-ship_im_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y < ship_im_height-1){
         if(ship_im[4*(i+ship_im_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
     }
-    
+
     if(neighbor_alpha){
       outline.push_back(vec2((float)x/(float)ship_im_width,(float)y/(float)ship_im_height));
     }
   }
-  
+
   for(unsigned int i=0; i < outline.size(); i++){
     outline[i].x =  ship_bbox[0].x + outline[i].x*(ship_bbox[1].x-ship_bbox[0].x);
     outline[i].y =  ship_bbox[0].y + outline[i].y*(ship_bbox[1].y-ship_bbox[0].y);
   }
-  
+
   file_location = source_path + "sprites/mario_jumping_right.png";
   error = lodepng::decode(ship_t_im, ship_t_im_width, ship_t_im_height, file_location.c_str());
   std::cout << ship_t_im_width << " X " << ship_t_im_height << " image loaded\n";
@@ -114,11 +114,11 @@ Ship::Ship(){
   file_location = source_path + "sprites/mario_running_right.png";
   error = lodepng::decode(ship_left, s_left_width, s_left_height, file_location.c_str());
   std::cout << s_left_width << " X " << s_left_height << " image loaded\n";
-  
+
   for(unsigned int i=0; i < s_left_width*s_left_height; i++){
     unsigned int x = i%s_left_width;
     unsigned int y = i/s_left_width;
-    
+
     bool neighbor_alpha = false;
     if(ship_left[4*i+3] != 0){
       if(x > 0){
@@ -126,26 +126,26 @@ Ship::Ship(){
           neighbor_alpha = true;
         }
       }
-      
+
       if(x < s_left_width-1){
         if(ship_left[4*(i+1)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y > 0){
         if(ship_left[4*(i-s_left_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y < s_left_height-1){
         if(ship_left[4*(i+s_left_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
     }
-    
+
     if(neighbor_alpha){
       outline_left.push_back(vec2((float)x/(float)s_left_width,(float)y/(float)s_left_height));
     }
@@ -158,11 +158,11 @@ Ship::Ship(){
   file_location = source_path + "sprites/mario_running_left.png";
   error = lodepng::decode(ship_right, s_right_width, s_right_height, file_location.c_str());
   std::cout << s_right_width << " X " << s_right_height << " image loaded\n";
-  
+
   for(unsigned int i=0; i < s_right_width*s_right_height; i++){
     unsigned int x = i%s_right_width;
     unsigned int y = i/s_right_width;
-    
+
     bool neighbor_alpha = false;
     if(ship_right[4*i+3] != 0){
       if(x > 0){
@@ -170,26 +170,26 @@ Ship::Ship(){
           neighbor_alpha = true;
         }
       }
-      
+
       if(x < s_right_width-1){
         if(ship_right[4*(i+1)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y > 0){
         if(ship_right[4*(i-s_right_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
-      
+
       if(y < s_right_height-1){
         if(ship_right[4*(i+s_right_width)+3] == 0){
           neighbor_alpha = true;
         }
       }
     }
-    
+
     if(neighbor_alpha){
       outline_right.push_back(vec2((float)x/(float)s_right_width,(float)y/(float)s_right_height));
     }
@@ -217,22 +217,27 @@ Ship::Ship(){
 // Lock movement when jumping
 //
 void Ship::update_state(vec4 extents){
-    
+
+    // Mario's movement on first platform
+    // since start platform is flat, movement logic works (number 0 platform
+    which_platform();
+    send_to_platform();
+
     float ramp_pts[14] = {};
     float ramp_unit = (extents[1] - extents[0]) / 14;
     float min_bound;
     float max_bound;
-    
+
     for (int i = 0; i < 14; i++) {
         ramp_pts[i] = extents[0] + (i * ramp_unit);
     }
-    
+
      float x_end;
      int parity;
     float bound = 0.01;
-    
+
     if (state.jump_on) {
-        
+
         state.velocity.y -= grav;
         state.cur_location += state.velocity;
         if (state.velocity.y < 0) {
@@ -246,7 +251,7 @@ void Ship::update_state(vec4 extents){
                     }
                 }
             }
-            
+
         }
     }
     else if (state.init_jump) {
@@ -256,7 +261,7 @@ void Ship::update_state(vec4 extents){
         else {
             parity = 1;
         }
-        
+
         if (is_start_platform){
             x_end = state.cur_location.x + (parity * 0.6);
         }
@@ -268,12 +273,12 @@ void Ship::update_state(vec4 extents){
         // Mario's movement on first platform
         // since start platform is flat, movement logic works (number 0 platform
         which_platform();
-        
+
         if(is_start){
             state.cur_location = vec2(-1.0, -.85);
             is_start = false;
         }
-        
+
         if(state.platform_num == 0){
             // Moves sprite left
             if(state.turning == _TURN_LEFT){
@@ -284,7 +289,7 @@ void Ship::update_state(vec4 extents){
                     state.velocity*=max_speed;
                 }
             }
-            
+
             // Moves sprite right
             if(state.turning == _TURN_RIGHT){
                 std::cout << state.cur_location << std::cout;
@@ -301,25 +306,25 @@ void Ship::update_state(vec4 extents){
             else{
                 state.in_ladder_range = false;
             }
-            
+
             // TODO Add lots of platform vectors, or fix jump somehow.
             // "jump" movement
-            
+
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
-            
+
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             if(state.velocity.y > .01){
                 state.velocity.y -=.03 ;
             }
-            
+
             if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
                 state.velocity.y -=.2;
             }
         }
-        
+
         // movement logic for odd platforms
         // platform 1, 3
         // if odd platform
@@ -328,7 +333,7 @@ void Ship::update_state(vec4 extents){
             if(state.turning == _TURN_LEFT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity -= .15 * vec2(1.0, 0.0);
-                
+
                 // diagonal upwards movement
                 state.velocity.y += .007;
                 if(length(state.velocity) > max_speed){
@@ -336,21 +341,21 @@ void Ship::update_state(vec4 extents){
                     state.velocity*=max_speed;
                 }
             }
-            
+
             // Moves sprite right
             if(state.turning == _TURN_RIGHT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity += .15 * vec2(1.0, 0.0);
                 // diagonal downward movement
-                
+
                 state.velocity -= .007 * vec2(0.0, 1.0);
-                
+
                 if(length(state.velocity) > max_speed){
                     state.velocity = normalize(state.velocity);
                     state.velocity*=max_speed;
                 }
             }
-            
+
             // second + third ladders
             if((state.cur_location.x > -1.0 && state.cur_location.x < -.75) || (state.cur_location.x > -.18 && state.cur_location.x < .07) || (state.cur_location.x > -.57 && state.cur_location.x < -.32))
             {
@@ -359,17 +364,17 @@ void Ship::update_state(vec4 extents){
             else{
                 state.in_ladder_range = false;
             }
-            
+
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
-            
+
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             /*if(state.velocity.y > .01){
              state.velocity.y -=.03 ;
              }
-             
+
              if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
              state.velocity.y -=.2;
              }
@@ -381,7 +386,7 @@ void Ship::update_state(vec4 extents){
             if(state.turning == _TURN_LEFT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity -= .15 * vec2(1.0, 0.0);
-                
+
                 // diagonal upwards movement
                 state.velocity.y -= .007;
                 if(length(state.velocity) > max_speed){
@@ -389,21 +394,21 @@ void Ship::update_state(vec4 extents){
                     state.velocity*=max_speed;
                 }
             }
-            
+
             // Moves sprite right
             if(state.turning == _TURN_RIGHT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity += .15 * vec2(1.0, 0.0);
                 // diagonal downward movement
-                
+
                 state.velocity += .007 * vec2(0.0, 1.0);
-                
+
                 if(length(state.velocity) > max_speed){
                     state.velocity = normalize(state.velocity);
                     state.velocity*=max_speed;
                 }
             }
-            
+
             if((state.cur_location.x > .75 && state.cur_location.x < 1) || (state.cur_location.x > 0.05 && state.cur_location.x < .2) || (state.cur_location.x > 0.77 && state.cur_location.x < 0.92))
             {
                 state.in_ladder_range = true;
@@ -411,42 +416,42 @@ void Ship::update_state(vec4 extents){
             else{
                 state.in_ladder_range = false;
             }
-            
+
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
-            
+
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             /*if(state.velocity.y > .01){
              state.velocity.y -=.03 ;
              }
-             
+
              if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
              state.velocity.y -=.2;
              }
              */
         }
-        
+
         // if final platform
         if(state.platform_num == 777){
             // Moves sprite left
             if(state.turning == _TURN_LEFT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity -= .15 * vec2(1.0, 0.0);
-                
+
                 if(length(state.velocity) > max_speed){
                     state.velocity = normalize(state.velocity);
                     state.velocity*=max_speed;
                 }
             }
-            
+
             // Moves sprite right
             if(state.turning == _TURN_RIGHT){
                 std::cout << state.cur_location << std::cout;
                 state.velocity += .15 * vec2(1.0, 0.0);
                 // diagonal downward movement
-                
+
                 if(length(state.velocity) > max_speed){
                     state.velocity = normalize(state.velocity);
                     state.velocity*=max_speed;
@@ -463,33 +468,33 @@ void Ship::update_state(vec4 extents){
             else{
                 state.in_ladder_range = false;
             }
-            
+
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
-            
+
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             /*if(state.velocity.y > .01){
              state.velocity.y -=.03 ;
              }
-             
+
              if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
              state.velocity.y -=.2;
              }
              */
         }
-        
+
         // Maybe delete damping effect
         state.velocity*= damping_fact;
         state.cur_location+=state.velocity;
-        
+
     }
-    
+
     if(state.cur_location.x <= extents[0]){
         state.cur_location.x = extents[0];
         state.velocity.x = 0.0;
-        
+
     }
     if(state.cur_location.x >= extents[1]){
         state.cur_location.x = extents[1];
@@ -498,7 +503,7 @@ void Ship::update_state(vec4 extents){
     if(state.cur_location.y <= -.85 ||state.cur_location.y >= extents[3]){
         state.velocity.y = 0.0;
     }
-    
+
     if (state.turning == _TURN_LEFT) {
         left_bbox[0] = vec2(state.cur_location.x - 0.057692, state.cur_location.y - 0.075);
         left_bbox[1] = vec2(state.cur_location.x + 0.057692, state.cur_location.y + 0.075);
@@ -512,7 +517,7 @@ void Ship::update_state(vec4 extents){
         ship_bbox[0] = vec2(state.cur_location.x - 0.075, state.cur_location.y - 0.075);
         ship_bbox[1] = vec2(state.cur_location.x + 0.075, state.cur_location.y + 0.075);
     }
-    
+
 }
 
 
@@ -544,13 +549,13 @@ void Ship::gl_init(){
   glLinkProgram(GLvars.program);
   check_program_link(GLvars.program);
   glUseProgram(GLvars.program);
-  
+
   glBindFragDataLocation(GLvars.program, 0, "fragColor");
 
   GLvars.vpos_location   = glGetAttribLocation(GLvars.program, "vPos");
   GLvars.vtex_location = glGetAttribLocation(GLvars.program, "vTexCoord" );
   GLvars.M_location = glGetUniformLocation(GLvars.program, "M" );
-  
+
   glGenTextures( 1, &GLvars.ship_texture );
   glGenTextures( 1, &GLvars.ship_t_texture );
   glGenTextures( 1, &GLvars.left_texture );
@@ -573,7 +578,7 @@ void Ship::gl_init(){
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT );
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
-  
+
   glBindTexture( GL_TEXTURE_2D, GLvars.left_texture );
   glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, s_left_width, s_left_height,
                0, GL_RGBA, GL_UNSIGNED_BYTE, &ship_left[0]);
@@ -589,7 +594,7 @@ void Ship::gl_init(){
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT );
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
   glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
-  
+
   glBindTexture( GL_TEXTURE_2D, GLvars.left_t_texture );
   glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, s_left_t_width, s_left_t_height,
                0, GL_RGBA, GL_UNSIGNED_BYTE, &ship_left_t[0]);
@@ -630,40 +635,40 @@ void Ship::gl_init(){
   glVertexAttribPointer( GLvars.vtex_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(ship_vert_size) );
 
   glBindVertexArray(0);
-  
+
 }
 
 
 void Ship::draw(mat4 Projection){
   glUseProgram( GLvars.program );
   glBindVertexArray( GLvars.vao );
-    
+
   mat4 ModelView = Translate(state.cur_location.x, state.cur_location.y, 0)
                    * RotateZ(state.angle);
-  
+
 
   glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, Projection*ModelView);
-  
+
   if(!state.jump_on && state.turning == _NO_TURN){
     glBindTexture( GL_TEXTURE_2D, GLvars.ship_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 0, 4 );
   }
-  
+
   if(state.jump_on && state.turning == _NO_TURN){
     glBindTexture( GL_TEXTURE_2D, GLvars.ship_t_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 4, 4 );
   }
-  
+
   if(!state.jump_on && state.turning == _TURN_LEFT){
     glBindTexture( GL_TEXTURE_2D, GLvars.left_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 8, 4 );
   }
-  
+
   if(!state.jump_on && state.turning == _TURN_RIGHT){
     glBindTexture( GL_TEXTURE_2D, GLvars.right_texture  );
     glDrawArrays( GL_TRIANGLE_STRIP, 8, 4 );
   }
-  
+
   if(state.jump_on && state.turning == _TURN_LEFT){
     glBindTexture( GL_TEXTURE_2D, GLvars.left_t_texture );
     glDrawArrays( GL_TRIANGLE_STRIP, 12, 4 );
@@ -673,8 +678,8 @@ void Ship::draw(mat4 Projection){
     glBindTexture( GL_TEXTURE_2D, GLvars.right_t_texture  );
     glDrawArrays( GL_TRIANGLE_STRIP, 12, 4 );
   }
-  
+
   glBindVertexArray(0);
   glUseProgram(0);
-  
+
 }

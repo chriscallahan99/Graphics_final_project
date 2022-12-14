@@ -131,6 +131,27 @@ public:
         }
     }
     
+    inline void send_to_platform(){
+        if(( state.platform_num == 0 || state.platform_num == 777) && state.jump_on == false && state.is_climbing == false){
+            if(state.platform_num == 0){
+                state.cur_location.y = -.85;
+            }
+            if(state.platform_num == 777){
+                state.cur_location.y = .4;
+            }
+        }
+        
+        if(( state.platform_num == 1 || state.platform_num == 3) && state.jump_on == false && state.is_climbing == false){
+            if(state.platform_num == 1){
+                //state.cur_location.y = -.85;
+            }
+            if(state.platform_num == 3){
+                //state.cur_location.y = .4;
+            }
+        }
+        
+    }
+    
     
     inline void ladder_pos(){
         // L1 start = x = -.75
@@ -148,10 +169,10 @@ public:
         if(state.cur_location.y < -.15 && state.cur_location.y > -.39){
             state.platform_num = 2;
         }
-        if(state.cur_location.y < .08 && state.cur_location.y > -.15){
+        if(state.cur_location.y < .12 && state.cur_location.y > -.15){
             state.platform_num = 3;
         }
-        if(state.cur_location.y < .36 && state.cur_location.y > .08){
+        if(state.cur_location.y < .36 && state.cur_location.y > .12){
             state.platform_num = 4;
         }
         if(state.cur_location.y > .36){
@@ -162,14 +183,21 @@ public:
     
   inline void start_climb(){
       if(state.in_ladder_range == true){
-          state.is_climbing= true;
+          state.is_climbing = true;
           state.cur_location.y += .05;
+      }
+      else{
+          state.is_climbing = false;
       }
   }
     
     inline void start_declimb(){
         if(state.in_ladder_range == true){
+            state.is_climbing = true;
             state.cur_location.y -= .05;
+        }
+        else{
+            state.is_climbing = false;
         }
     }
     
