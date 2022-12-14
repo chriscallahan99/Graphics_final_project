@@ -35,11 +35,11 @@ Asteroid::Asteroid(unsigned int index){
   asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
   
   if(index == 1){
-    std::string file_location = source_path + "sprites/barrel.png";
+    std::string file_location = source_path + "sprites/barrell.png";
     unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
   }
   if(index == 2){
-    std::string file_location = source_path + "sprites/barrel.png";
+    std::string file_location = source_path + "sprites/barrell.png";
     unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
   }
   std::cout << im_width << " X " << im_height << " image loaded\n";
