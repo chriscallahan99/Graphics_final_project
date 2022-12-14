@@ -1,13 +1,13 @@
 //
 //  Game.h
-//  Asteroids
+//  Donkey_Kong
 //
-//  Created by Brian Summa on 9/7/15.
+//  Created by Luke Gulson, Chris Callahn, Mark George on 12/14/22.
 //
 //
 
-#ifndef Asteroids_Game_h
-#define Asteroids_Game_h
+#ifndef Donkey_Kong__Game_h
+#define Donkey_Kong__Game_h
 
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
@@ -25,16 +25,14 @@
 #include <utils/loadTexture.h>
 
 
-#include "Bullets.h"
-#include "Ship.h"
-#include "Asteroid.h"
+#include "Mario.h"
+#include "Barrel.h"
 
 class Game{
 
 public:
-  Ship *ship;
-  std::vector <Asteroid *> asteroids;
-  Bullets bullets;
+  Mario *mario;
+  std::vector <Barrel *> barrels;
 
   //left right bottom top of window
   vec4 screen_extents;
@@ -62,16 +60,15 @@ public:
   Game();
   
   ~Game(){
-    delete ship;
-    asteroids.clear();
+    delete mario;
+    barrels.clear();
   }
   
   void init(){
-    for(unsigned int i=0; i < asteroids.size(); i++){
-      asteroids[i]->gl_init();
+    for(unsigned int i=0; i < barrels.size(); i++){
+      barrels[i]->gl_init();
     }
-    ship->gl_init();
-    bullets.gl_init();
+    mario->gl_init();
     gl_init();
   }
   
@@ -79,10 +76,9 @@ public:
       if(is_alive){
           draw_alive_bg(proj);
       }
-      ship->draw(proj);
-    bullets.draw(proj);
-    for(unsigned int i=0; i < asteroids.size(); i++){
-      asteroids[i]->draw(proj);
+      mario->draw(proj);
+    for(unsigned int i=0; i < barrels.size(); i++){
+      barrels[i]->draw(proj);
     }
     
     if(game_over){
@@ -91,11 +87,10 @@ public:
   }
   
   void update(){
-    for(unsigned int i=0; i < asteroids.size(); i++){
-      asteroids[i]->update_state(screen_extents);
+    for(unsigned int i=0; i < barrels.size(); i++){
+      barrels[i]->update_state(screen_extents);
     }
-    ship->update_state(screen_extents);
-    bullets.update_state(screen_extents);
+    mario->update_state(screen_extents);
     
     game_over = testIntersections();
   }

@@ -1,8 +1,8 @@
 //
 //  Game.cpp
-//  Asteroids
+//  Donkey_Kong
 //
-//  Created by Brian Summa on 6/5/15.
+//  Created by Luke Gulson, Chris Callahn, Mark George on 12/14/22.
 //
 // Contains test interactions, and gameover / BG logic
 
@@ -10,60 +10,60 @@
 
 
 bool Game::testIntersections(){
-    // ship mins should be current
-    // current position is the center, so ship min should be current location - 1/2 bbox, to go from center of ship to bottom left
-    // ship max should be current location + 1/2 bbox to go from center of ship to top right.
+    // mario mins should be current
+    // current position is the center, so mario min should be current location - 1/2 bbox, to go from center of mario to bottom left
+    // mario max should be current location + 1/2 bbox to go from center of mario to top right.
     
     // since min starts at
-    if (ship -> state.turning == Ship::_TURN_LEFT) {
-        ship -> ship_bbox[0] = ship -> left_bbox[0];
-        ship -> ship_bbox[1] = ship -> left_bbox[1];
+    if (mario -> state.turning == Mario::_TURN_LEFT) {
+        mario -> mario_bbox[0] = mario -> left_bbox[0];
+        mario -> mario_bbox[1] = mario -> left_bbox[1];
     }
-    if (ship -> state.turning == Ship::_TURN_RIGHT) { //
-        ship -> ship_bbox[0] = ship -> right_bbox[0];
-        ship -> ship_bbox[1] = ship -> right_bbox[1];
+    if (mario -> state.turning == Mario::_TURN_RIGHT) { //
+        mario -> mario_bbox[0] = mario -> right_bbox[0];
+        mario -> mario_bbox[1] = mario -> right_bbox[1];
     }
     
-    vec2 ship_mins = vec2(ship->state.cur_location.x + ship->ship_bbox[0].x, ship->state.cur_location.y +  ship->ship_bbox[0].y);
-    vec2 ship_maxs = vec2(ship->state.cur_location.x + ship->ship_bbox[1].x, ship->state.cur_location.y +  ship->ship_bbox[1].y);
+    vec2 mario_mins = vec2(mario->state.cur_location.x + mario->mario_bbox[0].x, mario->state.cur_location.y +  mario->mario_bbox[0].y);
+    vec2 mario_maxs = vec2(mario->state.cur_location.x + mario->mario_bbox[1].x, mario->state.cur_location.y +  mario->mario_bbox[1].y);
     
-    vec2 asteroid_1_mins = vec2(asteroids[0]->state.cur_location.x + asteroids[0]->asteroid_bbox[0].x, asteroids[0]->state.cur_location.y + asteroids[0]->asteroid_bbox[0].y);
-    vec2 asteroid_1_maxs = vec2(asteroids[0]->state.cur_location.x + asteroids[0]->asteroid_bbox[1].x, asteroids[0]->state.cur_location.y + asteroids[0]->asteroid_bbox[1].y);
+    vec2 barrel_1_mins = vec2(barrels[0]->state.cur_location.x + barrels[0]->barrel_bbox[0].x, barrels[0]->state.cur_location.y + barrels[0]->barrel_bbox[0].y);
+    vec2 barrel_1_maxs = vec2(barrels[0]->state.cur_location.x + barrels[0]->barrel_bbox[1].x, barrels[0]->state.cur_location.y + barrels[0]->barrel_bbox[1].y);
     
-    vec2 asteroid_2_mins = vec2(asteroids[1]->state.cur_location.x + asteroids[1]->asteroid_bbox[0].x, asteroids[1]->state.cur_location.y + asteroids[1]->asteroid_bbox[0].y);
-    vec2 asteroid_2_maxs = vec2(asteroids[1]->state.cur_location.x + asteroids[1]->asteroid_bbox[1].x, asteroids[1]->state.cur_location.y + asteroids[1]->asteroid_bbox[1].y);
+    vec2 barrel_2_mins = vec2(barrels[1]->state.cur_location.x + barrels[1]->barrel_bbox[0].x, barrels[1]->state.cur_location.y + barrels[1]->barrel_bbox[0].y);
+    vec2 barrel_2_maxs = vec2(barrels[1]->state.cur_location.x + barrels[1]->barrel_bbox[1].x, barrels[1]->state.cur_location.y + barrels[1]->barrel_bbox[1].y);
 
     bool x_intersecting1 = false;
     bool y_intersecting1 = false;
     bool x_intersecting2 = false;
     bool y_intersecting2 = false;
     
-    if  (ship_maxs.x >= asteroid_1_mins.x)   {
-        if  (ship_mins.x <= asteroid_1_maxs.x)  {
+    if  (mario_maxs.x >= barrel_1_mins.x)   {
+        if  (mario_mins.x <= barrel_1_maxs.x)  {
             x_intersecting1 = true;
         }
     }
-    if  (ship_maxs.y >= asteroid_1_mins.y)   {
-        if  (ship_mins.y <= asteroid_1_maxs.y)  {
+    if  (mario_maxs.y >= barrel_1_mins.y)   {
+        if  (mario_mins.y <= barrel_1_maxs.y)  {
             y_intersecting1 = true;
         }
     }
     
-    if  (ship_maxs.x >= asteroid_2_mins.x)   {
-        if  (ship_mins.x <= asteroid_2_maxs.x)  {
+    if  (mario_maxs.x >= barrel_2_mins.x)   {
+        if  (mario_mins.x <= barrel_2_maxs.x)  {
             x_intersecting2 = true;
         }
     }
-    if  (ship_maxs.y >= asteroid_2_mins.y)   {
-        if  (ship_mins.y <= asteroid_2_maxs.y)  {
+    if  (mario_maxs.y >= barrel_2_mins.y)   {
+        if  (mario_mins.y <= barrel_2_maxs.y)  {
             y_intersecting2 = true;
         }
     }
     
     
     if ((x_intersecting1 && y_intersecting1) || ((x_intersecting2 && y_intersecting2)))   {
-        std::cout << ship->ship_bbox[0].x  <<std::endl;
-        std::cout << asteroid_1_mins  <<std::endl;
+        std::cout << mario->mario_bbox[0].x  <<std::endl;
+        std::cout << barrel_1_mins  <<std::endl;
         return true;
     }
     else    {
@@ -73,10 +73,10 @@ bool Game::testIntersections(){
 }
 
 Game::Game(){
-  ship = new Ship();
-  asteroids.resize(2);
-  asteroids[0] = new Asteroid(1);
-  asteroids[1] = new Asteroid(2);
+  mario = new Mario();
+  barrels.resize(2);
+  barrels[0] = new Barrel(1);
+  barrels[1] = new Barrel(2);
   game_over = false;
     
   is_alive = true;
@@ -176,8 +176,8 @@ void Game::gl_init(){
 }
 
 void Game::draw_game_over(mat4 proj){
-    ship->state.cur_location.x = -1.0;
-    ship->state.cur_location.y = -.85;
+    mario->state.cur_location.x = -1.0;
+    mario->state.cur_location.y = -.85;
   
   glUseProgram(GOGLvars.program);
   glBindVertexArray( GOGLvars.vao );

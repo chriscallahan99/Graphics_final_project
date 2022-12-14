@@ -1,4 +1,4 @@
-# Install script for directory: /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD
+# Install script for directory: /Users/lukegulson/Documents/code/ComputerGraphics/Graphics_final_project/Asteroids!_HD_copy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,11 +37,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build")
+set(CMAKE_BINARY_DIR "/Users/lukegulson/Documents/code/ComputerGraphics/Graphics_final_project/Asteroids!_HD_copy/build")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/glfw-3.3.7/cmake_install.cmake")
+  include("/Users/lukegulson/Documents/code/ComputerGraphics/Graphics_final_project/Asteroids!_HD_copy/build/glfw-3.3.7/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/algorithms-module-halo-3/Asteroids!_HD/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lukegulson/Documents/code/ComputerGraphics/Graphics_final_project/Asteroids!_HD_copy/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

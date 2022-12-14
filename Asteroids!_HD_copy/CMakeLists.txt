@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-PROJECT(ASTEROIDS)
+PROJECT(DONKEY_KONG)
 SET(CMAKE_BUILD_TYPE "Release")
 
 if (!MSVC)
@@ -27,7 +27,7 @@ include_directories(${CMAKE_SOURCE_DIR}/source
 					${CMAKE_SOURCE_DIR}/source/common
 					${CMAKE_SOURCE_DIR}/shaders)
 					
-add_executable(asteroids WIN32 MACOSX_BUNDLE 
+add_executable(donkey_kong WIN32 MACOSX_BUNDLE
 	source/Game.h
 	source/Game.cpp
 	source/utils/shader_process.h
@@ -39,28 +39,24 @@ add_executable(asteroids WIN32 MACOSX_BUNDLE
 	source/utils/lodepng.h
 	source/path/path.cpp
 	source/main.cpp
-	source/Ship.cpp
-	source/Ship.h 
-	source/Asteroid.cpp
-	source/Asteroid.h 
-	source/Bullets.cpp
-	source/Bullets.h
+	source/Mario.cpp
+	source/Mario.h
+	source/Barrel.cpp
+	source/Barrel.h
 	shaders/fshader_Texture.glsl
-	shaders/vshader_Texture.glsl
-	shaders/fshader_Bullets.glsl
-	shaders/vshader_Bullets.glsl)
+	shaders/vshader_Texture.glsl)
 	
 #Windows cleanup
 if (MSVC)
     # Tell MSVC to use main instead of WinMain for Windows subsystem executables
-    set_target_properties(asteroids PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
+    set_target_properties(donkey_kong PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
 endif()
 
 #Apple cleanup
 if (APPLE)
-    set_target_properties(asteroids PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
+    set_target_properties(donkey_kong PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
 	
-    set_target_properties(asteroids PROPERTIES
+    set_target_properties(donkey_kong PROPERTIES
                           MACOSX_BUNDLE_SHORT_VERSION_STRING ${GLFW_VERSION}
                           MACOSX_BUNDLE_LONG_VERSION_STRING ${GLFW_VERSION_FULL}
     					  MACOSX_BUNDLE_ICON_FILE glfw.icns)

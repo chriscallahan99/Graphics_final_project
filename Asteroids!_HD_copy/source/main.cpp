@@ -13,29 +13,26 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
   if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
     glfwSetWindowShouldClose(window, GLFW_TRUE);
   if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-    game->ship->rotateLeft();
+    game->mario->rotateLeft();
   if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-    game->ship->rotateRight();
+    game->mario->rotateRight();
   if ( (key == GLFW_KEY_RIGHT || key == GLFW_KEY_LEFT)  && action == GLFW_RELEASE)
-    game->ship->stopTurn();
+    game->mario->stopTurn();
     
  // climb up latter
     if (key == GLFW_KEY_UP && (action == GLFW_PRESS || action == GLFW_REPEAT)){
-        game->ship->start_climb();
+        game->mario->start_climb();
     }
     
     if (key == GLFW_KEY_DOWN && (action == GLFW_PRESS || action == GLFW_REPEAT)){
-        game->ship->start_declimb();
+        game->mario->start_declimb();
     }
     
     
   if (key == GLFW_KEY_SPACE){
     if(action == GLFW_PRESS){
-      game->ship->start_jump();
+      game->mario->start_jump();
     }
-  }
-  if (key == GLFW_KEY_Z && action == GLFW_PRESS){
-    game->bullets.add(game->ship->pew_pew());
   }
 }
 
@@ -147,7 +144,7 @@ int main(void)
     game->screen_extents[3] = 1.0;
     
     //(left, right, bottom, top)        
-    mat4 proj = Ortho2D(game->screen_extents[0],game->screen_extents[1],
+    tcg::mat4 proj = Ortho2D(game->screen_extents[0],game->screen_extents[1],
                         game->screen_extents[2],game->screen_extents[3]);
     
     animate();
