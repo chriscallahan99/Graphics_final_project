@@ -26,17 +26,6 @@ Asteroid::Asteroid(unsigned int index){
     if(index == 1){
         state.num_asteroid = 1;
         state.cur_location = state.start_pos;
-
-    bool release_barrel = false;
-
-
-
-    if(index == 1){
-        state.num_asteroid = 1;
-        state.cur_location = state.start_pos;
-
-        if(state.cur_location.y < -.1)
-            release_barrel = true;
     }
 
     if(index == 2){
@@ -54,7 +43,6 @@ Asteroid::Asteroid(unsigned int index){
   //state.velocity = randvec(-1.0, 1.0);
   //state.velocity = normalize(state.velocity)*_ACC;
   //state.angle = 0.0;
->>>>>>> a97d32951d80c7fb540b1a0e4e78df0cf4abfa77
 
 
     Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
@@ -77,7 +65,7 @@ Asteroid::Asteroid(unsigned int index){
 
   std::cout << im_width << " X " << im_height << " image loaded\n";
 
-};
+    }
 
 
 
@@ -120,6 +108,7 @@ void Asteroid::update_state(vec4 extents){
     }
     if(state.platform_num == 0){
         state.velocity.x -= .002;
+    }
 
   state.cur_location += state.velocity;
   state.angle += angle_increment;
