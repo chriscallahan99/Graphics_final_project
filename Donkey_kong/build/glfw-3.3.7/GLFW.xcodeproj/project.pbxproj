@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		562A3C88674248D5B3F9FC9D /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F6E31CDB1E874335B1FAA340 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				3529BB4F3080F84B16083C9A /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6108B533172D4BFDAA79CBBB /* update_mappings */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 67404AC896FC4BC59142288D /* Build configuration list for PBXAggregateTarget "update_mappings" */;
+			buildPhases = (
+				91131C695F0EE9BA979654D2 /* Generate src/CMakeFiles/update_mappings */,
+			);
+			dependencies = (
+				CB77368C0E3C4570B5FA6CF9 /* PBXTargetDependency */,
+			);
+			name = update_mappings;
+			productName = update_mappings;
+		};
+		B49066231C194D9AA19E6F36 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DE70D6F52E974C4F95712720 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				90D67530748267409AC08F22 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				C7AF901DC2C347E2BD609946 /* PBXTargetDependency */,
+				73FA1642743A4B11B144AF6A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0576204F10B64816916CD516 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 20CAEF85176D487894038A7A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.m */; };
+		17A033B2AC89490490BBC8D3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 5223E12B61B24D36A8A9A925 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_init.m */; };
+		1A3F9AD09CAA4EA0B0ACDFEE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = CD799C1A14F54833B847012B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.c */; };
+		2ED5450106FF4844AE2A7554 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 64E4F3AF0DBE40CCAC570C3E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */; };
+		334AB8D90A204A1EA3F7A4AB /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 06AB8B3AC789477593A49665 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_time.c */; };
+		3AAF21D89A404A8E93574723 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = ED6ACD143CDB497C9775BFE9 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/glfw_config.h */; };
+		44C80E1925B34986997C993F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/internal.h */ = {isa = PBXBuildFile; fileRef = 2E7BCABE6BA54346B895459C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/internal.h */; };
+		517294B5A10748BA95397E93 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 90643BEF0D554F1BADB94312 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/vulkan.c */; };
+		54888C028D41486797815ECA /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = A6F29CC023AD4F32AE8EFCB4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.c */; };
+		6063A8895F924DE78EDD9AB0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = B6A0E64E87474098A6C8B4A4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.h */; };
+		636FC1B822554DA08EBE1EA5 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 0DB4A9543EF544D6A9F4C342 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.h */; };
+		649A6FDA3F9C4D72B4C63695 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 1B3A2A539080402D8B0FC370 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h */; };
+		64F49A8E7AE34626BCBD7AEE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 558DA9FE492F4E2EAD0CEF5F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3native.h */; };
+		6F81AC1C8A4745D499EA4EB2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 111F70228CB644328D7A54CA /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.c */; };
+		7F428E6899044D94B767AAB2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/window.c */ = {isa = PBXBuildFile; fileRef = FD63E2D7883C4D3B8980803A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/window.c */; };
+		8252673690624172A53BDD80 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/input.c */ = {isa = PBXBuildFile; fileRef = B87728367D3D404BB65DBACD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/input.c */; };
+		9E482775C69C4FDCB9432B73 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 6996E9D1934742A09C9620FE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.h */; };
+		9FC4466DBEE843DCAC76C8D3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 532A44E532584BFDB3C681E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/monitor.c */; };
+		A19349E59F4B469BB936A670 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = D4320DF0B8E04AED89A5D89C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3.h */; };
+		A8121D79F60B4BD2853ED12F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/init.c */ = {isa = PBXBuildFile; fileRef = 20E6633366054BC3817A984E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/init.c */; };
+		B8DA2EE602114C8D8DB1B324 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 457A3F0EF2BB4615B3979607 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.h */; };
+		C875FA6DDE844482AAE50DC4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = EE165DC0D1F54AF888D0AA0B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.m */; };
+		CDD095784D994AB9A15110BD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 8AAB571C12814FDC99F86235 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_window.m */; };
+		CEB0C4BD6C11406BB2931066 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = EEEE5BF9DA1149F1A3DC71A0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_platform.h */; };
+		E4D68698504441D7AC46CB50 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/context.c */ = {isa = PBXBuildFile; fileRef = CF9BA337BB2747559C5F8793 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/context.c */; };
+		F6686582D9384714BE79A795 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 06AC9250FD794DE591802FB6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.h */; };
+		FFA1B4B7D10D4340949684E7 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 5033A260BD5740748DB9172E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_monitor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		68BEAE93AE0B40FBA4A393B0 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		6C66DD1E660C4416AFB88F5A /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7A646CE155DB478FB92F629A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		ED92B41216B74CEAB2F320A5 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		29204A243A074C8790219390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B2B8717BD8430CBCB4312A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562A3C88674248D5B3F9FC9D;
+			remoteInfo = ZERO_CHECK;
+		};
+		5B760732C9184C51917B9F47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B2B8717BD8430CBCB4312A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562A3C88674248D5B3F9FC9D;
+			remoteInfo = ZERO_CHECK;
+		};
+		756C3E78A1EA455ABBCEE99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B2B8717BD8430CBCB4312A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562A3C88674248D5B3F9FC9D;
+			remoteInfo = ZERO_CHECK;
+		};
+		F27E4E13C2504D5FBDE01707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B2B8717BD8430CBCB4312A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61495B6CA85549D1B2093787;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06AB8B3AC789477593A49665 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		06AC9250FD794DE591802FB6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		0DB4A9543EF544D6A9F4C342 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		111F70228CB644328D7A54CA /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		1B3A2A539080402D8B0FC370 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = src/mappings.h; sourceTree = SOURCE_ROOT; };
+		20CAEF85176D487894038A7A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		20E6633366054BC3817A984E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+		2E7BCABE6BA54346B895459C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		2F095CA8A77F48C4886CD81A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h.in */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mappings.h.in; path = src/mappings.h.in; sourceTree = SOURCE_ROOT; };
+		457A3F0EF2BB4615B3979607 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		49AA3657B1BF4599AF7F278B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5033A260BD5740748DB9172E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		5223E12B61B24D36A8A9A925 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		532A44E532584BFDB3C681E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		558DA9FE492F4E2EAD0CEF5F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		64E4F3AF0DBE40CCAC570C3E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6996E9D1934742A09C9620FE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		8AAB571C12814FDC99F86235 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		90643BEF0D554F1BADB94312 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		A062A8EA5E4644AC8079033B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A6F29CC023AD4F32AE8EFCB4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		B6A0E64E87474098A6C8B4A4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		B87728367D3D404BB65DBACD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		BF9992D9BFD4496BACA747D5 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD799C1A14F54833B847012B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		CF9BA337BB2747559C5F8793 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		D4320DF0B8E04AED89A5D89C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		ED3EF29A0D9E4EF3A00E84CE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = GenerateMappings.cmake; path = CMake/GenerateMappings.cmake; sourceTree = SOURCE_ROOT; };
+		ED6ACD143CDB497C9775BFE9 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/glfw_config.h"; sourceTree = "<absolute>"; };
+		EE165DC0D1F54AF888D0AA0B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		EEEE5BF9DA1149F1A3DC71A0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		FD63E2D7883C4D3B8980803A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0BA66D3593C4F98AA366866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049EE2504CC646A38D947E17 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		0B37CE02DED7458F89794B72 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F095CA8A77F48C4886CD81A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h.in */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		32E55C0177E3428892404F47 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				83D2669F39C14322B081801A /* update_mappings */,
+				4B7E2DD7A444436AB814540F /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		3EA31B2F0261424F853AA24E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5223E12B61B24D36A8A9A925 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_init.m */,
+				EE165DC0D1F54AF888D0AA0B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.m */,
+				5033A260BD5740748DB9172E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_monitor.m */,
+				06AB8B3AC789477593A49665 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_time.c */,
+				8AAB571C12814FDC99F86235 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_window.m */,
+				CF9BA337BB2747559C5F8793 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/context.c */,
+				111F70228CB644328D7A54CA /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.c */,
+				20E6633366054BC3817A984E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/init.c */,
+				B87728367D3D404BB65DBACD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/input.c */,
+				532A44E532584BFDB3C681E0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/monitor.c */,
+				20CAEF85176D487894038A7A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.m */,
+				CD799C1A14F54833B847012B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.c */,
+				A6F29CC023AD4F32AE8EFCB4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.c */,
+				90643BEF0D554F1BADB94312 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/vulkan.c */,
+				FD63E2D7883C4D3B8980803A /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4B348C57D80945289FE20165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B7E2DD7A444436AB814540F /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				3EA31B2F0261424F853AA24E /* Source Files */,
+				C5F39306529B46EF8D877019 /* Header Files */,
+				64E4F3AF0DBE40CCAC570C3E /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		83D2669F39C14322B081801A /* update_mappings */ = {
+			isa = PBXGroup;
+			children = (
+				0B37CE02DED7458F89794B72 /* Header Files */,
+				049EE2504CC646A38D947E17 /* CMake Rules */,
+				ED3EF29A0D9E4EF3A00E84CE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake */,
+				49AA3657B1BF4599AF7F278B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/CMakeLists.txt */,
+			);
+			name = update_mappings;
+			sourceTree = "<group>";
+		};
+		849978097B3C4E5CBEC459DC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8DEDDC6F161A47ED8332E539 /* CMake Rules */,
+				A062A8EA5E4644AC8079033B /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8DEDDC6F161A47ED8332E539 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C5F39306529B46EF8D877019 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED6ACD143CDB497C9775BFE9 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/glfw_config.h */,
+				D4320DF0B8E04AED89A5D89C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3.h */,
+				558DA9FE492F4E2EAD0CEF5F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include/GLFW/glfw3native.h */,
+				457A3F0EF2BB4615B3979607 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.h */,
+				EEEE5BF9DA1149F1A3DC71A0 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_platform.h */,
+				06AC9250FD794DE591802FB6 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.h */,
+				2E7BCABE6BA54346B895459C /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/internal.h */,
+				1B3A2A539080402D8B0FC370 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/mappings.h */,
+				0DB4A9543EF544D6A9F4C342 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.h */,
+				6996E9D1934742A09C9620FE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.h */,
+				B6A0E64E87474098A6C8B4A4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EF1DC69491314A338676F2E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9992D9BFD4496BACA747D5 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCF9D8AEBB984597A2FEDA20 = {
+			isa = PBXGroup;
+			children = (
+				849978097B3C4E5CBEC459DC /* ALL_BUILD */,
+				32E55C0177E3428892404F47 /* GLFW3 */,
+				EF1DC69491314A338676F2E1 /* Products */,
+				4B348C57D80945289FE20165 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61495B6CA85549D1B2093787 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5F136B23474500B5CC641D /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				74CC5C515F7E4E13895F6851 /* Sources */,
+				F0BA66D3593C4F98AA366866 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29B38654813D41F4B99B88D2 /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = BF9992D9BFD4496BACA747D5 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7B2B8717BD8430CBCB4312A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = 5A7B2F77E5E34E31A744E6B4 /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				68BEAE93AE0B40FBA4A393B0 /* Debug */,
+				ED92B41216B74CEAB2F320A5 /* Release */,
+				7A646CE155DB478FB92F629A /* MinSizeRel */,
+				6C66DD1E660C4416AFB88F5A /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FCF9D8AEBB984597A2FEDA20;
+			projectDirPath = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7";
+			projectRoot = "";
+			targets = (
+				B49066231C194D9AA19E6F36 /* ALL_BUILD */,
+				562A3C88674248D5B3F9FC9D /* ZERO_CHECK */,
+				61495B6CA85549D1B2093787 /* glfw */,
+				6108B533172D4BFDAA79CBBB /* update_mappings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3529BB4F3080F84B16083C9A /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  make -f /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		90D67530748267409AC08F22 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		91131C695F0EE9BA979654D2 /* Generate src/CMakeFiles/update_mappings */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate src/CMakeFiles/update_mappings";
+			outputPaths = (
+"/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src/CMakeFiles/update_mappings"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src
+  /Applications/CMake.app/Contents/bin/cmake -P /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EF220574C043FA76D2683574 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CC5C515F7E4E13895F6851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A033B2AC89490490BBC8D3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_init.m */,
+				C875FA6DDE844482AAE50DC4 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_joystick.m */,
+				FFA1B4B7D10D4340949684E7 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_monitor.m */,
+				334AB8D90A204A1EA3F7A4AB /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_time.c */,
+				CDD095784D994AB9A15110BD /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/cocoa_window.m */,
+				E4D68698504441D7AC46CB50 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/context.c */,
+				6F81AC1C8A4745D499EA4EB2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/egl_context.c */,
+				A8121D79F60B4BD2853ED12F /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/init.c */,
+				8252673690624172A53BDD80 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/input.c */,
+				9FC4466DBEE843DCAC76C8D3 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/monitor.c */,
+				0576204F10B64816916CD516 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/nsgl_context.m */,
+				1A3F9AD09CAA4EA0B0ACDFEE /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/osmesa_context.c */,
+				54888C028D41486797815ECA /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/posix_thread.c */,
+				517294B5A10748BA95397E93 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/vulkan.c */,
+				7F428E6899044D94B767AAB2 /* /Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29B38654813D41F4B99B88D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562A3C88674248D5B3F9FC9D /* ZERO_CHECK */;
+			targetProxy = 5B760732C9184C51917B9F47 /* PBXContainerItemProxy */;
+		};
+		73FA1642743A4B11B144AF6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61495B6CA85549D1B2093787 /* glfw */;
+			targetProxy = F27E4E13C2504D5FBDE01707 /* PBXContainerItemProxy */;
+		};
+		C7AF901DC2C347E2BD609946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562A3C88674248D5B3F9FC9D /* ZERO_CHECK */;
+			targetProxy = 756C3E78A1EA455ABBCEE99E /* PBXContainerItemProxy */;
+		};
+		CB77368C0E3C4570B5FA6CF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562A3C88674248D5B3F9FC9D /* ZERO_CHECK */;
+			targetProxy = 29204A243A074C8790219390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		134B650B02884B9DB170D59C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1470BEEE41264806A6A85BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		25055E7F5DD14561B2C189AD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2F402D6E8FE946ABB42DC830 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3266D26164D940D1AF55EEF3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/build";
+			};
+			name = MinSizeRel;
+		};
+		5191F92F04644D649D673D76 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		53A660FCBA414588BCA29311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5A7CA0A713E34B6DBA5D6720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6363638FEB33427CBA8D7F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8768312B47514BB09F4C7955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9829285222EC4C12AC1BA468 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A175B72B75FB4BC1A77E7026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A21053286F374C93BF8D906B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A22F5669D1374E158C23632F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A5E828B8B166457B8CB1AE41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/build";
+			};
+			name = Release;
+		};
+		AFAA16BFC3004041BFD9229F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/build";
+			};
+			name = Debug;
+		};
+		CA3A0024476B4F7D88A6BB07 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E66EA01DEABB4C51A6CB298A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		EB212D166D82407EB7BE3EDA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F8B79BE2A1764EE395BDC8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/include","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/glfw-3.3.7/src","/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/chriscallahan/Desktop/2022_Fall_classes/Computer_Graphics/Final_Project/Graphics_final_project/Donkey_kong/build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5F136B23474500B5CC641D /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B79BE2A1764EE395BDC8C0 /* Debug */,
+				E66EA01DEABB4C51A6CB298A /* Release */,
+				A22F5669D1374E158C23632F /* MinSizeRel */,
+				A21053286F374C93BF8D906B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A7B2F77E5E34E31A744E6B4 /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAA16BFC3004041BFD9229F /* Debug */,
+				A5E828B8B166457B8CB1AE41 /* Release */,
+				3266D26164D940D1AF55EEF3 /* MinSizeRel */,
+				9829285222EC4C12AC1BA468 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		67404AC896FC4BC59142288D /* Build configuration list for PBXAggregateTarget "update_mappings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A7CA0A713E34B6DBA5D6720 /* Debug */,
+				A175B72B75FB4BC1A77E7026 /* Release */,
+				25055E7F5DD14561B2C189AD /* MinSizeRel */,
+				CA3A0024476B4F7D88A6BB07 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE70D6F52E974C4F95712720 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8768312B47514BB09F4C7955 /* Debug */,
+				1470BEEE41264806A6A85BAA /* Release */,
+				5191F92F04644D649D673D76 /* MinSizeRel */,
+				134B650B02884B9DB170D59C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6E31CDB1E874335B1FAA340 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A660FCBA414588BCA29311 /* Debug */,
+				6363638FEB33427CBA8D7F52 /* Release */,
+				EB212D166D82407EB7BE3EDA /* MinSizeRel */,
+				2F402D6E8FE946ABB42DC830 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7B2B8717BD8430CBCB4312A /* Project object */;
+}
