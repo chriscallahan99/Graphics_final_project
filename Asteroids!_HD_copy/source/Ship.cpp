@@ -23,7 +23,7 @@ Ship::Ship(){
   max_speed = 0.05;
   damping_fact = 0.7;
   accel = 0.008;
-    grav = 0.005;
+    grav = 0.002;
 
   ship_pos.resize(16);
   ship_uv.resize(16);
@@ -211,13 +211,46 @@ Ship::Ship(){
 
 };
 
+void Ship::jump_interpolate(vec4 extents, bool is_left_edge){
+    std::cout << "current y when jump_interpolate" << std::endl;
+    std::cout << state.cur_location.y << std::endl;
+    if (is_left_edge) {
+        if (state.cur_location.y >= (155.0 / 383.0)) {
+            state.cur_location.y = (155.0 / 383.0);
+        }
+        else if (state.cur_location.y >= (-17.0 / 383.0)) {
+            state.cur_location.y = (-17.0 / 383.0);
+        }
+        else if (state.cur_location.y >= (-214.0 / 383.0)) {
+            state.cur_location.y = (-214.0 / 383.0);
+        }
+        else {
+            state.cur_location.y = -0.82;
+        }
+        state.cur_location.x = extents[0] + 0.075;
+    }
+    else {
+        if (state.cur_location.y >= (80.0 / 383.0)) {
+            state.cur_location.y = (80.0 / 383.0);
+        }
+        else if (state.cur_location.y >= (-117.0 / 383.0)) {
+            state.cur_location.y = (-117.0 / 383.0);
+        }
+        else {
+            state.cur_location.y = -0.82;
+        }
+        state.cur_location.x = extents[1] - 0.075;
+    }
+    stop_jump();
+}
+
 // TODO
 // Include distance from platform for mario to impact jump where if mario is 2 units away from platform subtract from velocity until mario y = platform y
 // Make platform y = platform heights + step formula
 // Lock movement when jumping
 //
 void Ship::update_state(vec4 extents){
-
+    
     // Mario's movement on first platform
     // since start platform is flat, movement logic works (number 0 platform
     which_platform();
@@ -227,34 +260,68 @@ void Ship::update_state(vec4 extents){
     float ramp_unit = (extents[1] - extents[0]) / 14;
     float min_bound;
     float max_bound;
-
+    
     for (int i = 0; i < 14; i++) {
         ramp_pts[i] = extents[0] + (i * ramp_unit);
     }
-
-     float y_end;
-     int parity;
-    float bound = 0.001;
-
+    
     if (state.jump_on) {
-        state.cur_location += state.velocity;
-        state.velocity.y -= grav;
-        if ((state.velocity.y < 0) && ((state.cur_location.y >= (y_end - bound)) || (state.cur_location.y <= (y_end + bound))))  {
-            stop_jump();
+        
+        if (state.cur_location.x <= (extents[0] + 0.075)) {
+            jump_interpolate(extents, true);
+        }
+        else if (state.cur_location.x >= (extents[1] - 0.075)) {
+            jump_interpolate(extents, false);
+        }
+        
+        else {
+            if (state.parity < 0) {
+                
+                if (state.cur_location.x <= state.x_end) {
+                    stop_jump();
+                }
+            }
+            
+            if (state.parity > 0){
+                if (state.cur_location.x >= state.x_end) {
+                    stop_jump();
+                }
+            }
+            else {
+                if ((state.velocity.y < 0) && (state.cur_location.y <= state.y_end)) {
+                    state.cur_location.y = state.y_end;
+                    stop_jump();
+                }
+            }
+            
+            state.cur_location += state.velocity;
+            state.velocity.y -= grav;
+            
         }
     }
+    
     else if (state.init_jump) {
         if (state.turning == _TURN_LEFT){
-            parity = -1;
+            state.parity = -1;
+        }
+        else if (state.turning == _TURN_RIGHT){
+            state.parity = 1;
         }
         else {
-            parity = 1;
+            state.parity = 0;
         }
-
+        if (state.parity != 0) {
+            state.velocity = 0.03 * normalize(vec2(state.parity * 1.0, 1.0));
+        }
+        else {
+            state.velocity = 0.022 * normalize(vec2(0.0, 1.0));
+        }
+        
         if (is_start_platform){
-            y_end = state.cur_location.y;
+            state.x_end = state.cur_location.x + (state.parity * ((2 * state.velocity.x * state.velocity.x) / grav));
+            state.y_end = state.cur_location.y;
         }
-        state.velocity = 0.03 * normalize(vec2(parity * 1.0, 1.0));
+        
         state.jump_on = true;
         state.init_jump = false;
     }
@@ -422,35 +489,22 @@ void Ship::update_state(vec4 extents){
             else{
                 state.in_ladder_range = false;
             }
-
-            // Make it so all other movement is locked. (no turning, no changing directions)
-            if(state.jump_on == true){
-                state.velocity += .15 * vec2(0.0, 1.0);
-                
-            }
-        
-            
-
-            // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-            /*if(state.velocity.y > .01){
-             state.velocity.y -=.03 ;
-             }
-
-             if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
-             state.velocity.y -=.2;
-             }
-             */
         }
 
         // Maybe delete damping effect
         state.velocity*= damping_fact;
         state.cur_location+=state.velocity;
+        if (state.cur_location.x <= (extents[0] + 0.075)) {
+            state.cur_location.x = extents[0] + 0.075;
+            state.velocity.x = 0.0;
+        }
+        else if (state.cur_location.x >= (extents[1] - 0.075)){
+            state.cur_location.x = (extents[1] - 0.075);
+            state.velocity.x = 0.0;
+        }
 
     }
 
-    if(state.cur_location.x <= extents[0] || state.cur_location.x > extents[1]){
-        state.cur_location.x = -state.cur_location.x;
-    }
     if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
         state.cur_location.y = -state.cur_location.y;
     }

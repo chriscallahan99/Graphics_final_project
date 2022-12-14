@@ -81,6 +81,10 @@ class Ship{
         float angle;
         float platform_dist;
         int platform_num;
+        int parity;
+        float x_end;
+        float y_end;
+        
     } state;
     
     //OpenGL variables for a ship
@@ -106,7 +110,9 @@ public:
     
     inline void start_jump(){ state.init_jump= true;}
     inline void is_jumping(){ state.jump_on= true;}
-    inline void stop_jump() { state.jump_on= false;}
+    inline void stop_jump() { state.jump_on= false; state.velocity = vec2(0.0, 0.0);}
+    
+    inline void jump_interpolate(vec4 extents, bool is_left_edge);
     
     inline void which_platform(){
         
