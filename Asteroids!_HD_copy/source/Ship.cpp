@@ -234,12 +234,12 @@ void Ship::update_state(vec4 extents){
 
      float y_end;
      int parity;
-    float bound = 0.01;
+    float bound = 0.001;
 
     if (state.jump_on) {
         state.cur_location += state.velocity;
         state.velocity.y -= grav;
-        if ((state.velocity.y < 0) && (state.cur_location.y >= (y_end - bound)) && (state.cur_location.y <= (y_end + bound)))  {
+        if ((state.velocity.y < 0) && ((state.cur_location.y >= (y_end - bound)) || (state.cur_location.y <= (y_end + bound))))  {
             stop_jump();
         }
     }
@@ -254,7 +254,7 @@ void Ship::update_state(vec4 extents){
         if (is_start_platform){
             y_end = state.cur_location.y;
         }
-        state.velocity = 0.05 * normalize(vec2(parity * 1.0, 1.0));
+        state.velocity = 0.03 * normalize(vec2(parity * 1.0, 1.0));
         state.jump_on = true;
         state.init_jump = false;
     }
@@ -289,28 +289,11 @@ void Ship::update_state(vec4 extents){
                 }
             }
             // first ladder
-            if(state.cur_location.x > .75 && state.cur_location.x < 1 &&   state.cur_location.y > -.92 && state.cur_location.y < -.67){
+            if(state.cur_location.x > .75 && state.cur_location.x < 1.0 && state.cur_location.y > -.92 && state.cur_location.y < -.67){
                 state.in_ladder_range = true;
             }
             else{
                 state.in_ladder_range = false;
-            }
-
-            // TODO Add lots of platform vectors, or fix jump somehow.
-            // "jump" movement
-
-            // Make it so all other movement is locked. (no turning, no changing directions)
-            if(state.jump_on == true){
-                state.velocity += .15 * vec2(0.0, 1.0);
-            }
-
-            // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-            if(state.velocity.y > .01){
-                state.velocity.y -=.03 ;
-            }
-
-            if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
-                state.velocity.y -=.2;
             }
         }
 
@@ -359,15 +342,6 @@ void Ship::update_state(vec4 extents){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
 
-            // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-            /*if(state.velocity.y > .01){
-             state.velocity.y -=.03 ;
-             }
-
-             if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
-             state.velocity.y -=.2;
-             }
-             */
         }
         // if even platform
         if(state.platform_num == 2 || state.platform_num == 4){
@@ -411,15 +385,6 @@ void Ship::update_state(vec4 extents){
                 state.velocity += .15 * vec2(0.0, 1.0);
             }
 
-            // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
-            /*if(state.velocity.y > .01){
-             state.velocity.y -=.03 ;
-             }
-
-             if(state.velocity.y> 0.0 && state.velocity.y < .05 ){
-             state.velocity.y -=.2;
-             }
-             */
         }
 
         // if final platform
@@ -449,7 +414,7 @@ void Ship::update_state(vec4 extents){
             // TODO
             //  final 3 ladders
             if((state.cur_location.x > .05 && state.cur_location.x < 0.3) ||
-               (state.cur_location.x > .05 && state.cur_location.x < 0.3) ||
+               (state.cur_location.x > -.4 && state.cur_location.x < -.25) ||
                (state.cur_location.x > -.68 && state.cur_location.x < -.38))
             {
                 state.in_ladder_range = true;
@@ -461,7 +426,10 @@ void Ship::update_state(vec4 extents){
             // Make it so all other movement is locked. (no turning, no changing directions)
             if(state.jump_on == true){
                 state.velocity += .15 * vec2(0.0, 1.0);
+                
             }
+        
+            
 
             // idea is to reduce mario's y velocity to negative to makeup for added y velocity from jumping
             /*if(state.velocity.y > .01){
