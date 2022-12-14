@@ -25,7 +25,7 @@ Asteroid::Asteroid(unsigned int index){
 
     if(index == 1){
         state.num_asteroid = 1;
-        state.cur_location = state.start_pos;
+        state.cur_location = vec2(0, -.35);
     }
 
     if(index == 2){
@@ -35,23 +35,13 @@ Asteroid::Asteroid(unsigned int index){
 
 
 
-
-
-
-
-
-  //state.velocity = randvec(-1.0, 1.0);
-  //state.velocity = normalize(state.velocity)*_ACC;
-  //state.angle = 0.0;
-
-
     Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
     Asteroid_vert.push_back(vec2(-0.05,  0.05)); Asteroid_uv.push_back(vec2(0.0,1.0));
     Asteroid_vert.push_back(vec2(0.05,  -0.05)); Asteroid_uv.push_back(vec2(1.0,0.0));
     Asteroid_vert.push_back(vec2(0.05,   0.05)); Asteroid_uv.push_back(vec2(1.0,1.0));
 
-  asteroid_bbox[0] = vec2(state.cur_location.x - 0.05, state.cur_location.y - 0.05);
-  asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
+  asteroid_bbox[0] = vec2(state.cur_location.x - 0.3, state.cur_location.y - 0.3);
+  asteroid_bbox[1] = vec2(state.cur_location.x + 0.3, state.cur_location.y + 0.3);
 
   if(index == 1){
     std::string file_location = source_path + "sprites/barrell.png";
@@ -74,44 +64,11 @@ void Asteroid::update_state(vec4 extents){
 
    which_platform();
    send_to_platform();
+    
   state.cur_location += state.velocity;
   state.angle += angle_increment;
 
-    if(state.cur_location.y < -.2){
-        state.is_start = false;
-    }
 
-
-    if(state.num_asteroid == 2 && state.is_start == true){
-        state.cur_location = state.start_pos;
-
-    }
-
-
-
-
-    if(state.platform_num == 777){
-        state.velocity = vec2(.055, 0);
-    }
-    if(state.platform_num == 4){
-        state.velocity = vec2(-.055, -.003);
-    }
-    if(state.platform_num == 3){
-        state.velocity = vec2(.055, -.003);
-    }
-
-    if(state.platform_num == 2){
-        state.velocity = vec2(-.055, -.003);
-    }
-    if(state.platform_num == 1){
-        state.velocity = vec2(.055, -.003);
-    }
-    if(state.platform_num == 0){
-        state.velocity.x -= .002;
-    }
-
-  state.cur_location += state.velocity;
-  state.angle += angle_increment;
 
 
 
@@ -146,8 +103,8 @@ void Asteroid::update_state(vec4 extents){
   }
 
 
-    asteroid_bbox[0] = vec2(state.cur_location.x - 0.05, state.cur_location.y - 0.05);
-    asteroid_bbox[1] = vec2(state.cur_location.x + 0.05, state.cur_location.y - 0.05);
+    asteroid_bbox[0] = vec2(state.cur_location.x - 0.08, state.cur_location.y - 0.08);
+    asteroid_bbox[1] = vec2(state.cur_location.x + 0.08, state.cur_location.y + 0.08);
 
 }
 
