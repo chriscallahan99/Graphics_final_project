@@ -81,8 +81,7 @@ Game::Game(){
     
   is_alive = true;
   
-    
-    std::string file_location = source_path + "sprites/bg_dk.png";
+    std::string file_location = source_path + "sprites/background_better.png";
   unsigned error = lodepng::decode(game_over_im, go_width, go_height, file_location.c_str());
   std::cout << go_width << " X " << go_height << " game image loaded\n";
   
@@ -177,6 +176,8 @@ void Game::gl_init(){
 }
 
 void Game::draw_game_over(mat4 proj){
+    ship->state.cur_location.x = -1.0;
+    ship->state.cur_location.y = -.85;
   
   glUseProgram(GOGLvars.program);
   glBindVertexArray( GOGLvars.vao );

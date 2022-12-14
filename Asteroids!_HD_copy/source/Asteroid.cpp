@@ -20,17 +20,36 @@ vec2 randvec(float min, float max){
 }
 
 Asteroid::Asteroid(unsigned int index){
-  state.cur_location = randvec(-1.0, 1.0);
-  state.velocity = randvec(-1.0, 1.0);
-  state.velocity = normalize(state.velocity)*_ACC;
-  state.angle = 0.0;
+    
+    bool release_barrel = false;
+    
+    if(index == 1){
+        state.num_asteroid = 1;
+        state.cur_location = state.start_pos;
+    }
+    
+    if(index == 2){
+        state.num_asteroid = 2;
+        state.cur_location = state.start_pos;
+    }
+    
+
+    
+
+    
+    
+    
+    
+  //state.velocity = randvec(-1.0, 1.0);
+  //state.velocity = normalize(state.velocity)*_ACC;
+  //state.angle = 0.0;
 
   angle_increment = (rand() > RAND_MAX/2)? M_PI/32 : -M_PI/32 ;
 
-  Asteroid_vert.push_back(vec2(-0.15, -0.15)); Asteroid_uv.push_back(vec2(0.0,0.0));
-  Asteroid_vert.push_back(vec2(-0.15,  0.15)); Asteroid_uv.push_back(vec2(0.0,1.0));
-  Asteroid_vert.push_back(vec2(0.15,  -0.15)); Asteroid_uv.push_back(vec2(1.0,0.0));
-  Asteroid_vert.push_back(vec2(0.15,   0.15)); Asteroid_uv.push_back(vec2(1.0,1.0));
+  Asteroid_vert.push_back(vec2(-0.05, -0.05)); Asteroid_uv.push_back(vec2(0.0,0.0));
+  Asteroid_vert.push_back(vec2(-0.05,  0.05)); Asteroid_uv.push_back(vec2(0.0,1.0));
+  Asteroid_vert.push_back(vec2(0.05,  -0.05)); Asteroid_uv.push_back(vec2(1.0,0.0));
+  Asteroid_vert.push_back(vec2(0.05,   0.05)); Asteroid_uv.push_back(vec2(1.0,1.0));
 
   asteroid_bbox[0] = vec2(state.cur_location.x - 0.15, state.cur_location.y - 0.15);
   asteroid_bbox[1] = vec2(state.cur_location.x + 0.15, state.cur_location.y - 0.15);
@@ -43,6 +62,8 @@ Asteroid::Asteroid(unsigned int index){
     std::string file_location = source_path + "sprites/barrell.png";
     unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
   }
+    
+    
   std::cout << im_width << " X " << im_height << " image loaded\n";
 
 };
@@ -51,15 +72,61 @@ Asteroid::Asteroid(unsigned int index){
 
 
 void Asteroid::update_state(vec4 extents){
+    
+   which_platform();
+   send_to_platform();
+    
+    bool release_barrell = false;
 
-  state.cur_location+=state.velocity;
+  state.cur_location += state.velocity;
   state.angle += angle_increment;
+    
+    if(state.cur_location.y < -.2){
+        state.is_start = false;
+    }
+    
+    
+    if(state.num_asteroid == 2 && state.is_start == true){
+        state.cur_location = state.start_pos;
+        
+    }
+    
 
-  if(state.cur_location.x < extents[0] || state.cur_location.x > extents[1]){
-    state.cur_location.x = -state.cur_location.x;
+    
+    
+    if(state.platform_num == 777){
+        state.velocity = vec2(.055, 0);
+    }
+    if(state.platform_num == 4){
+        state.velocity = vec2(-.055, -.003);
+    }
+    if(state.platform_num == 3){
+        state.velocity = vec2(.055, -.003);
+    }
+    
+    if(state.platform_num == 2){
+        state.velocity = vec2(-.055, -.003);
+    }
+    if(state.platform_num == 1){
+        state.velocity = vec2(.055, -.003);
+    }
+    if(state.platform_num == 0){
+        state.velocity.x -= .002;
+    }
+    
+    if(state.cur_location.x < -.9 && state.cur_location.y < -.85){
+        state.cur_location = state.start_pos;
+    }
+    
+    
+
+  if(state.cur_location.x+.1 <= extents[0] || state.cur_location.x >= extents[1]){
+      state.velocity.x *= -1.0;
+      angle_increment = -angle_increment;
   }
-  if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
-    state.cur_location.y = -state.cur_location.y;
+  if(state.cur_location.y <= -.9){
+      state.cur_location.y = -.9;
+      
   }
 
 
